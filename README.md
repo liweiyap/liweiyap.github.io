@@ -1,4 +1,4 @@
-## Li-Wei Yap ~ https://liweiyap.github.io
+# Li-Wei Yap ~ https://liweiyap.github.io
 
 My personal website -- a programmer's portfolio.
 
