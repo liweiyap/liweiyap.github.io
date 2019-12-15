@@ -1,3 +1,16 @@
+/*
+ * Overwrite specific functions in `assets/css/poole.css`
+ */
+
+.page {
+    text-align:justify
+}
+
+
+/*
+ * Overwrite specific functions in `assets/css/hyde.css`
+ */
+
 .sidebar-about h1 {
     font-family: "Montserrat", sans-serif;
     font-size: 2.75rem;
@@ -10,12 +23,11 @@
     }
 }
 
-/*
- * Themes
- *
- * Color the sidebar and links within blog posts.
- * To use any theme class, add it to the <body> element in `_layouts/default.html`.
- */
+@media (min-width: 48em) {
+    .content, .container {
+        max-width: none;
+  }
+}
 
 /* dark blue */
 .theme-base-0g .sidebar {
@@ -33,13 +45,4 @@
 .theme-base-0h .content a,
 .theme-base-0h .related-posts li a:hover {
     color: #3873b3;
-}
-
-/* lighter blue */
-.theme-base-0d .sidebar {
-    background-color: #6a9fb5;
-}
-.theme-base-0d .content a,
-.theme-base-0d .related-posts li a:hover {
-    color: #6a9fb5;
 }
