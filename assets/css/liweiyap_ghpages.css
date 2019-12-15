@@ -3,7 +3,7 @@
  */
 
 .page {
-    text-align:justify
+    text-align: justify;
 }
 
 
@@ -11,9 +11,13 @@
  * Overwrite specific functions in `assets/css/hyde.css`
  */
 
+.sidebar {
+    text-align: center;
+}
+
 .sidebar-about h1 {
-    font-family: "Montserrat", sans-serif;
-    font-size: 2.75rem;
+    font-family: "PT Sans", Helvetica, Arial, sans-serif;
+    font-size: 3rem;
 }
 
 @media (min-width: 48em) {
@@ -28,6 +32,11 @@
         max-width: none;
   }
 }
+
+
+/*
+ * New functions
+ */
 
 /* dark blue */
 .theme-base-0g .sidebar {
@@ -45,4 +54,12 @@
 .theme-base-0h .content a,
 .theme-base-0h .related-posts li a:hover {
     color: #3873b3;
+}
+
+.sidebar-avatar {
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 160px;
 }
