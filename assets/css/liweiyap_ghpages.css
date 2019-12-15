@@ -1,0 +1,45 @@
+.sidebar-about h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.75rem;
+}
+
+@media (min-width: 48em) {
+    .sidebar {
+        padding-top: 4rem;
+        width: 20rem;
+    }
+}
+
+/*
+ * Themes
+ *
+ * Color the sidebar and links within blog posts.
+ * To use any theme class, add it to the <body> element in `_layouts/default.html`.
+ */
+
+/* dark blue */
+.theme-base-0g .sidebar {
+    background-color: #162d46;
+}
+.theme-base-0g .content a,
+.theme-base-0g .related-posts li a:hover {
+    color: #162d46;
+}
+
+/* ocean blue */
+.theme-base-0h .sidebar {
+    background-color: #3873b3;
+}
+.theme-base-0h .content a,
+.theme-base-0h .related-posts li a:hover {
+    color: #3873b3;
+}
+
+/* lighter blue */
+.theme-base-0d .sidebar {
+    background-color: #6a9fb5;
+}
+.theme-base-0d .content a,
+.theme-base-0d .related-posts li a:hover {
+    color: #6a9fb5;
+}
