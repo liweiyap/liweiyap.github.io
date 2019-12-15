@@ -2,5 +2,5 @@
 _config-dev.yml
 _site/*
 .DS_Store
-Gemfile.lock
+Gemfile*
 .sass-cache/
