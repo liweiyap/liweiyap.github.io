@@ -24,8 +24,8 @@ body {
     font-size: 3rem;
 }
 
-a.sidebar-nav-item: hover,
-a.sidebar-nav-item: focus {
+a.sidebar-nav-item:hover,
+a.sidebar-nav-item:focus {
     text-decoration: none;
     opacity: 0.5;
 }
