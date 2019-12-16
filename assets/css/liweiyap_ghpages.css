@@ -4,7 +4,7 @@
 
 /* words on page */
 body {
-    color: #313131;
+    color: #000;
 }
 
 .page {
@@ -99,6 +99,7 @@ a.sidebar-nav-item:focus {
 .theme-base-0g .content a,
 .theme-base-0g .related-posts li a:hover {
     text-decoration: none;
+    color: #0000ff;
 }
 
 /* ocean blue theme */
@@ -108,6 +109,7 @@ a.sidebar-nav-item:focus {
 .theme-base-0h .content a,
 .theme-base-0h .related-posts li a:hover {
     text-decoration: none;
+    color: #0000ff;
 }
 
 /* picture */
