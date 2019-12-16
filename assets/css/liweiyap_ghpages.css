@@ -33,14 +33,14 @@ a.sidebar-nav-item:focus {
 
 @media (min-width: 48em) {
     .sidebar {
-        padding-top: 4rem;
+        padding-top: 2rem;
         width: 20rem;
         overflow-y: auto;
     }
 }
 
 .content {
-    padding-top: 2rem;
+    padding-top: 0rem;
     padding-bottom: 0rem;
 }
 
@@ -61,24 +61,25 @@ a.sidebar-nav-item:focus {
  * New functions
  */
 
-/* dark blue */
+/* dark blue theme */
 .theme-base-0g .sidebar {
     background-color: #162d46;
 }
 .theme-base-0g .content a,
 .theme-base-0g .related-posts li a:hover {
-    color: #162d46;
+    text-decoration: none;
 }
 
-/* ocean blue */
+/* ocean blue theme */
 .theme-base-0h .sidebar {
     background-color: #3873b3;
 }
 .theme-base-0h .content a,
 .theme-base-0h .related-posts li a:hover {
-    color: #3873b3;
+    text-decoration: none;
 }
 
+/* picture */
 .sidebar-avatar {
     border-radius: 50%;
     display: block;
@@ -92,6 +93,7 @@ img:hover {
     filter: alpha(opacity=80);  /* For IE8 and earlier */
 }
 
+/* social icons on same line */
 .list-inline {
     padding-left: 0;
     list-style: none;
@@ -114,4 +116,14 @@ a.social-icon:focus {
 
 a.social-icon:active {
     color: inherit;
+}
+
+/* two-column format */
+.row {
+    display: flex;
+    margin-top: -1rem;
+}
+
+.column {
+    flex: 50%;
 }
