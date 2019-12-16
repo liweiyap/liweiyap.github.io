@@ -44,6 +44,12 @@ a.sidebar-nav-item:focus {
     }
 }
 
+@media (max-width: 48em) {
+  .content {
+    padding-top: 2rem;
+  }
+}
+
 
 /*
  * New functions
