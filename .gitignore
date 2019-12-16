@@ -4,3 +4,4 @@ _site/*
 .DS_Store
 Gemfile*
 .sass-cache/
+kopplin_indigo.txt
