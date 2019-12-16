@@ -2,6 +2,7 @@
  * Overwrite specific functions in `assets/css/poole.css`
  */
 
+/* words on page */
 body {
     color: #313131;
 }
@@ -16,6 +17,20 @@ body {
  * Overwrite specific functions in `assets/css/hyde.css`
  */
 
+/* font size when stretching */
+@media (min-width: 58em) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 68em) {
+    html {
+        font-size: 20px;
+    }
+}
+
+/* margins when stretching */
 @media (min-width: 48em) {
     .content {
         margin-left: 21rem;
@@ -30,6 +45,7 @@ body {
     }
 }
 
+/* sidebar settings */
 .sidebar {
     text-align: center;
 }
@@ -53,6 +69,7 @@ a.sidebar-nav-item:focus {
     }
 }
 
+/* general margins and paddings */
 .content {
     padding-top: 0rem;
     padding-bottom: 0rem;
@@ -65,9 +82,9 @@ a.sidebar-nav-item:focus {
 }
 
 @media (max-width: 48em) {
-  .content {
-      padding-top: 0.75rem;
-  }
+    .content {
+        padding-top: 0.75rem;
+    }
 }
 
 
