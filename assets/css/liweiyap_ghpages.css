@@ -74,3 +74,27 @@ a.sidebar-nav-item:focus {
     margin-right: auto;
     height: 160px;
 }
+
+.list-inline {
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.social-icon {
+    font-size: 1.5rem;
+}
+
+a.social-icon {
+    color: #fff;
+}
+
+a.social-icon:hover,
+a.social-icon:focus {
+    opacity: 0.5;
+}
+
+a.social-icon:active {
+    color: inherit;
+}

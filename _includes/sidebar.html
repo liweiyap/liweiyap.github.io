@@ -3,7 +3,7 @@
         <a href="{{ site.baseurl }}"><img class="sidebar-avatar" src="/assets/liwei.jpg" /></a>
         
         <div class="sidebar-about">
-            <h1>{{ site.name }}</h1>
+            <h1>{{ site.author.name }}</h1>
             <p class="lead">{{ site.description }}</p>
         </div>
         
@@ -12,7 +12,25 @@
                 <a class="sidebar-nav-item" href="{{ item.link }}">{{ item.name }}</a>
             {% endfor %}
         </nav>
-
+        
+        <ul class="list-inline">
+            <li>
+                <a href="mailto:{{ site.author.email }}" class="social-icon">
+                    <i class="fa fa-fw fa-envelope"></i>
+                </a>
+            </li>
+            <li>
+                <a href="{{ site.author.github }}" target="_blank" class="social-icon">
+                    <i class="fa fa-fw fa-github"></i>
+                </a>
+            </li>
+            <li>
+                <a href="{{ site.author.linkedin}}" target="_blank" class="social-icon">
+                    <i class="fa fa-fw fa-linkedin-square"></i>
+                </a>
+            </li>
+        </ul>
+        
         <p>&copy; {{ site.time | date: '%Y' }}. Credits.</p>
     </div>
 </div>
