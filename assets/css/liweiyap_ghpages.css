@@ -2,6 +2,10 @@
  * Overwrite specific functions in `assets/css/poole.css`
  */
 
+body {
+    color: #313131;
+}
+
 .page {
     text-align: justify;
 }
@@ -20,6 +24,12 @@
     font-size: 3rem;
 }
 
+a.sidebar-nav-item: hover,
+a.sidebar-nav-item: focus {
+    text-decoration: none;
+    opacity: 0.5;
+}
+
 @media (min-width: 48em) {
     .sidebar {
         padding-top: 4rem;
@@ -31,7 +41,7 @@
 @media (min-width: 48em) {
     .content, .container {
         max-width: none;
-  }
+    }
 }
 
 
