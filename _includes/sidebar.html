@@ -1,18 +1,22 @@
 <div class="sidebar">
     <div class="container">
+        <!-- Picture of myself -->
         <a href="{{ site.baseurl }}"><img class="sidebar-avatar" src="/assets/liwei.jpg" /></a>
         
+        <!-- Descritpion of myself -->
         <div class="sidebar-about">
             <h1>{{ site.author.name }}</h1>
             <p class="lead">{{ site.description }}</p>
         </div>
         
+        <!-- Navigation to other pages on the same gh-pages website -->
         <nav class="sidebar-nav">
             {% for item in site.data.navigation %}
                 <a class="sidebar-nav-item" href="{{ item.link }}">{{ item.name }}</a>
             {% endfor %}
         </nav>
         
+        <!-- Social icons -->
         <ul class="list-inline">
             <li>
                 <a href="mailto:{{ site.author.email }}" class="social-icon">
@@ -31,6 +35,7 @@
             </li>
         </ul>
         
+        <!-- Copyright notice & credits as footer -->
         <p>&copy; {{ site.time | date: '%Y' }}. Credits.</p>
     </div>
 </div>

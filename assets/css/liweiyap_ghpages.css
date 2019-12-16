@@ -8,6 +8,7 @@ body {
 
 .page {
     text-align: justify;
+/*    margin-bottom: 0em;*/
 }
 
 
@@ -38,6 +39,11 @@ a.sidebar-nav-item:focus {
     }
 }
 
+.content {
+    padding-top: 2rem;
+    padding-bottom: 0rem;
+}
+
 @media (min-width: 48em) {
     .content, .container {
         max-width: none;
@@ -46,7 +52,7 @@ a.sidebar-nav-item:focus {
 
 @media (max-width: 48em) {
   .content {
-    padding-top: 2rem;
+      padding-top: 0.75rem;
   }
 }
 
