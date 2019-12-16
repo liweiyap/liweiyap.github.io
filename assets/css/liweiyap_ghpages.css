@@ -16,6 +16,20 @@ body {
  * Overwrite specific functions in `assets/css/hyde.css`
  */
 
+@media (min-width: 48em) {
+    .content {
+        margin-left: 21rem;
+        margin-right: 1rem;
+    }
+}
+
+@media (min-width: 58em) {
+    .content {
+        margin-left: 22rem;
+        margin-right: 2rem;
+    }
+}
+
 .sidebar {
     text-align: center;
 }
@@ -122,6 +136,7 @@ a.social-icon:active {
 .row {
     display: flex;
     margin-top: -1rem;
+    text-align: left;
 }
 
 .column {
