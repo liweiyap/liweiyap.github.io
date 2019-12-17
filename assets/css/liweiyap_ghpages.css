@@ -63,6 +63,12 @@ body {
     font-size: 3rem;
 }
 
+.sidebar a:hover,
+.sidebar a:focus {
+    opacity: 0.5;
+    text-decoration: none;
+}
+
 a.sidebar-nav-item:hover,
 a.sidebar-nav-item:focus {
     text-decoration: none;
