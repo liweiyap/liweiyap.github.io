@@ -1,0 +1,21 @@
+---
+title: Projects
+layout: page
+---
+<body>
+    <h1>Projects</h1>
+    
+    <div class="post">
+        <h2 class="post-title"><a href="https://github.com/liweiyap/MyCPU">My CPU</a></h2>
+        <h3 class="post-subtitle">Simulation of a simple stack-based CPU in C++</h3>
+        <p>The CPU contains an operand stack and a register. It processes a given code as a set of 32-bit hexadecimal instructions, which are parsed and disassembled into an opcode and an operand. See the <a href="https://github.com/liweiyap/MyCPU#example">README</a> for an example.</p>
+        <p>The stack is used to store the results of the elementary operations that are executed as the code is simulated. I designed my own stack to make the code easier to debug. The code was compiled using <a href="https://cmake.org/">CMake</a> and tested using the <a href="https://github.com/catchorg/Catch2">Catch2</a> header-only library.</p>
+    </div>
+    
+    <div class="post">
+        <h2 class="post-title"><a href="https://github.com/liweiyap/ProteinFolding">Predicting Protein Folding Is Difficult</a></h2>
+        <h3 class="post-subtitle">Simulation of the folding of a polypeptide in Matlab</h3>
+        <p>Proteins are large molecules made of building blocks known as amino acids. The prediction of the final folded structure of a protein from just its amino acid sequence is a major <a href="https://github.com/liweiyap/ProteinFolding#why-is-protein-folding-considered-an-unsolved-problem-in-biology">unsolved problem</a> in biology. In fact, in computer science, protein folding is considered an <a href="https://ieeexplore.ieee.org/document/6965037">NP-hard</a> problem.</p>
+        <p>In this project, I simulated a simple model of protein folding by applying the Metropolis condition, which probabilistically accepts a trial move of any amino acid residue based on the energy of its resulting interactions with other residues.</p>
+    </div>
+</body>

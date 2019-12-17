@@ -12,6 +12,14 @@ body {
     margin-bottom: 1em;
 }
 
+.post {
+    margin-bottom: 1em;
+}
+
+.post-title {
+    margin-top: 0.75em;
+}
+
 
 /*
  * Overwrite specific functions in `assets/css/hyde.css`
@@ -160,4 +168,12 @@ a.social-icon:active {
 
 .column {
     flex: 50%;
+}
+
+/* add short description to post, just after post-title */
+.post-subtitle {
+    margin-top: 0em;
+    margin-bottom: 0.5em;
+    font-weight: normal;
+    font-style: italic;
 }
