@@ -172,6 +172,7 @@ a.social-icon:active {
 
 /* add short description to post, just after post-title */
 .post-subtitle {
+    color: #000;
     margin-top: 0em;
     margin-bottom: 0.5em;
     font-weight: normal;
