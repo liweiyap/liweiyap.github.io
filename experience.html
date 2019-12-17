@@ -7,8 +7,37 @@ layout: page
 
     <div class="post">
         <h2 class="post-title">Pharmacometrics Data Intern</h2>
-        <h3 class="post-subtitle"><a href="https://www.intiquan.com/">IntiQuan GmbH</a>, 07/2018-09/2018</h3>
+        <h3 class="post-subtitle"><a href="https://www.intiquan.com/">IntiQuan GmbH</a>, Jul 2018 - Sep 2018</h3>
+        <p>I analysed <a href="https://en.wikipedia.org/wiki/PK/PD_models">PK/PD</a> data for a drug from a pre-clinical trial using a type of statistical model called an <a href="https://en.wikipedia.org/wiki/Mixed_model">NLME</a> model. I also developed a pipeline in <a href="https://www.r-project.org/">R</a> for data simulation in order to perform additional statistical tests using models based on <a href="http://lixoft.com/products/monolix/">Monolix</a> or <a href="http://www.sai.msu.su/sal/B/0/SYSFIT.html">SYSFIT</a>. I performed these tasks in a <a href="https://www.linux.org/">Linux</a> environment.
+        </p>
     </div>
     
     <h1>Practical Experience</h1>
+    
+    <div class="post">
+        <h2 class="post-title">Master Thesis</h2>
+        <h3 class="post-subtitle"><a href="https://csb.ethz.ch/">ETH Zürich</a>, Dec 2018 - Jul 2019</h3>
+        <p>I implemented a numerical <a href="https://en.wikipedia.org/wiki/Quasi-Monte_Carlo_method">(Quasi-Monte Carlo)</a> variant of the <a href="https://en.wikipedia.org/wiki/Expectation%E2%80%93maximization_algorithm">EM</a> algorithm in <a href="http://www.cplusplus.org/">C++</a> for statistical inference in <a href="https://en.wikipedia.org/wiki/Mixed_model">NLME</a> models. I programmed these models using <a href="https://en.wikipedia.org/wiki/Object-oriented_programming">OOP</a> and used them to study biological data. The code was compiled using <a href="https://cmake.org/">CMake</a> and version-controlled using Git. <a href="https://git.bsse.ethz.ch/csb/qmcnlme">Here</a> is a link to the repository.</p>
+        <p>I evaluated the performance of my numerical variant in comparison with that of the regular <a href="https://en.wikipedia.org/wiki/Monte_Carlo_method">Monte Carlo</a> variant and achieved a two-fold improvement in the convergence rate of statistical inference.</p>
+    </div>
+    
+    <div class="post">
+        <h2 class="post-title">Programming Lab Rotation II</h2>
+        <h3 class="post-subtitle"><a href="http://people.inf.ethz.ch/felixf/index.html">ETH Zürich</a>, Feb 2018 - Jun 2018</h3>
+        <p>I contributed to an in-house developed deep learning library, written in <a href="https://en.wikipedia.org/wiki/Active_Oberon">Active Oberon</a>, by implementing the <a href="https://deepai.org/machine-learning-glossary-and-terms/contrastive-divergence">contrastive divergence algorithm</a> for the unsupervised training of a <a href="https://deepai.org/machine-learning-glossary-and-terms/convolutional-neural-network">convolutional neural network (CNN)</a>.</p>
+        <p>I trained the CNN for feature recognition in <a href="http://yann.lecun.com/exdb/mnist/">MNIST images</a> and tuned its parameters to resolve issues like the <a href="https://deepai.org/machine-learning-glossary-and-terms/exploding-gradient-problem">exploding gradient problem</a>.</p>
+    </div>
+    
+    <div class="post">
+        <h2 class="post-title">Programming Lab Rotation I</h2>
+        <h3 class="post-subtitle"><a href="http://people.inf.ethz.ch/felixf/index.html">ETH Zürich</a>, Sep 2017 - Feb 2018</h3>
+        <p>I programmed a fast streaming convolution component in <a href="https://en.wikipedia.org/wiki/Active_Oberon">Active Oberon</a> for deployment on <a href="https://en.wikipedia.org/wiki/Field-programmable_gate_array">FPGA</a> hardware. To do so, I applied a programming model called <a href="http://people.inf.ethz.ch/felixf/pdfs/2016_FSP_ComputeModelHPSoCFPGA.pdf">Active Cells</a>, where each cell is an object with a local memory for an isolated process. Cells communicate via input or output ports.</p>
+        <p>I implemented a network of three cells in the following order: Input, Convolution, and Output. At each iteration, an element of a matrix is streamed in; the Convolution cell mimics a moving kernel for matrix convolution; finally, the convolutional output is streamed out.</p>
+    </div>
+    
+    <div class="post">
+        <h2 class="post-title">Visiting Researcher</h2>
+        <h3 class="post-subtitle"><a href="https://rgendres3.wixsite.com/biologicalphysics">Imperial College London</a>, Feb 2016 - Oct 2017</h3>
+        <p>I programmed an ODE model of the cell-wall dynamics during bacterial spore formation in <a href="https://uk.mathworks.com/products/matlab.html">Matlab</a>. I published my work as <a href="https://pubs.rsc.org/en/content/articlelanding/2017/SM/C7SM00818J#!divAbstract">lead author</a>.</p>
+    </div>
 </body>
