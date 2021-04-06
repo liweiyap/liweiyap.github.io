@@ -1,5 +1,7 @@
 title:        'Li-Wei'
-description:  'Aspiring Software Developer'
+description:
+    en:       'Software Developer'
+    de:       'Softwareentwickler'
 baseurl:      '/'
 
 author:

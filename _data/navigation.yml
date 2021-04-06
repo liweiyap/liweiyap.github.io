@@ -1,8 +1,24 @@
 - name: About Me
   link: /
+  lang: en
 - name: Projects
   link: /projects
+  lang: en
 - name: Experience
   link: /experience
+  lang: en
 - name: CV in PDF
   link: /cv.pdf
+  lang: en
+- name: Über Mich
+  link: /de
+  lang: de
+- name: Nebenprojekte
+  link: /de/nebenprojekte
+  lang: de
+- name: Berufserfahrung
+  link: /de/berufserfahrung
+  lang: de
+- name: Lebenslauf als PDF
+  link: /de/cv.pdf
+  lang: de

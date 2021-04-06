@@ -3,16 +3,23 @@
         <!-- Picture of myself -->
         <a href="https://liweiyap.github.io"><img class="sidebar-avatar" src="/assets/liwei.jpg" /></a>
         
-        <!-- Descritpion of myself -->
+        <!-- Description of myself -->
         <div class="sidebar-about">
             <h1>{{ site.author.name }}</h1>
-            <p class="lead">{{ site.description }}</p>
+
+            {% if page.lang == "en" %}
+                <p class="lead">{{ site.description.en }}</p>
+            {% else %}
+                <p class="lead">{{ site.description.de }}</p>
+            {% endif %}
         </div>
         
         <!-- Navigation to other pages on the same gh-pages website -->
         <nav class="sidebar-nav">
             {% for item in site.data.navigation %}
-                <a class="sidebar-nav-item" href="{{ item.link }}">{{ item.name }}</a>
+                {% if item.lang == page.lang %}
+                    <a class="sidebar-nav-item" href="{{ item.link }}">{{ item.name }}</a>
+                {% endif %}
             {% endfor %}
         </nav>
         
@@ -34,8 +41,22 @@
                 </a>
             </li>
         </ul>
+
+        <!-- Languages -->
+        <ul class="list-inline">
+            <li>
+                <a href="{{ site.baseurl }}">
+                    <img src="/assets/united-kingdom.png" height="30px">
+                </a>
+            </li>
+            <li>
+                <a href="{{ site.baseurl }}de">
+                    <img src="/assets/germany.png" height="30px">
+                </a>
+            </li>
+        </ul>
         
         <!-- Copyright notice & credits as footer -->
-        <p>&copy; {{ site.time | date: '%Y' }}. <a href="{{ site.baseurl }}credits">Credits.</a></p>
+        &copy; 2019-{{ site.time | date: '%Y' }}. <a href="{{ site.baseurl }}credits">Credits.</a>
     </div>
 </div>
