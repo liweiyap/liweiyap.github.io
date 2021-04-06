@@ -4,7 +4,8 @@
 
 /* words on page */
 body {
-    color: #000;
+    color: #eeeeee;
+    background-color: #191b1f;
 }
 
 .page {
@@ -56,23 +57,28 @@ body {
 /* sidebar settings */
 .sidebar {
     text-align: center;
+    color: rgba(238,238,238,.6);
 }
 
+.sidebar a {
+    color: #0088cc;
+  }
+
 .sidebar-about h1 {
+    color: #eeeeee;
     font-family: "PT Sans", Helvetica, Arial, sans-serif;
     font-size: 3rem;
 }
 
 .sidebar a:hover,
 .sidebar a:focus {
-    opacity: 0.5;
+    opacity: 0.8;
     text-decoration: none;
 }
 
 a.sidebar-nav-item:hover,
 a.sidebar-nav-item:focus {
     text-decoration: none;
-    opacity: 0.5;
 }
 
 @media (min-width: 48em) {
@@ -106,7 +112,7 @@ a.sidebar-nav-item:focus {
  * New functions
  */
 
-/* dark blue theme */
+/* regal blue theme */
 .theme-base-0g .sidebar {
     background-color: #162d46;
 }
@@ -116,12 +122,34 @@ a.sidebar-nav-item:focus {
     color: #0000ff;
 }
 
-/* ocean blue theme */
+/* curious blue theme */
 .theme-base-0h .sidebar {
     background-color: #3873b3;
 }
 .theme-base-0h .content a,
 .theme-base-0h .related-posts li a:hover {
+    text-decoration: none;
+    color: #0000ff;
+}
+
+/* black russian theme */
+.theme-base-0i .sidebar {
+    background-color: #191b1f;
+    /* border-inline-end: 6px solid green; */
+    /* border-inline-end-style: groove; */
+}
+.theme-base-0i .content a,
+.theme-base-0i .related-posts li a:hover {
+    text-decoration: none;
+    color: #0088cc;
+}
+
+/* black pearl theme */
+.theme-base-0j .sidebar {
+    background-color: #0d1116;
+}
+.theme-base-0j .content a,
+.theme-base-0j .related-posts li a:hover {
     text-decoration: none;
     color: #0000ff;
 }
@@ -153,12 +181,7 @@ img:hover {
 }
 
 a.social-icon {
-    color: #fff;
-}
-
-a.social-icon:hover,
-a.social-icon:focus {
-    opacity: 0.5;
+    color: #0088cc;
 }
 
 a.social-icon:active {
@@ -188,4 +211,25 @@ a.social-icon:active {
     margin-bottom: 0.5em;
     font-weight: normal;
     font-style: italic;
+}
+
+/* separation between sidebar and content */
+
+.vlinesep {
+    /* background-image: -webkit-linear-gradient(red, green, blue); */
+    border-left: 6px solid green;
+    height: 500px;
+    position: absolute;
+}
+
+@media (min-width: 48em) {
+    .vlinesep {
+        left: 20rem;
+    }
+}
+
+@media (max-width: 48em) {
+    .vlinesep {
+        visibility: hidden;
+    }
 }
