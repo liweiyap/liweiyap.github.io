@@ -132,7 +132,7 @@ a.sidebar-nav-item:focus {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    height: 160px;
+    height: 120px;
 }
 
 img:hover {
@@ -163,6 +163,11 @@ a.social-icon:focus {
 
 a.social-icon:active {
     color: inherit;
+}
+
+/* flag icons (does not work) */
+.flag-icon {
+    height: 30px;
 }
 
 /* two-column format */
