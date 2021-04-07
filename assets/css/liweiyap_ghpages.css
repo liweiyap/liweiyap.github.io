@@ -61,7 +61,7 @@ body {
 }
 
 .sidebar a {
-    color: #0088cc;
+    color: #3ebeff;
   }
 
 .sidebar-about h1 {
@@ -141,7 +141,7 @@ a.sidebar-nav-item:focus {
 .theme-base-0i .content a,
 .theme-base-0i .related-posts li a:hover {
     text-decoration: none;
-    color: #0088cc;
+    color: #3ebeff;
 }
 
 /* black pearl theme */
@@ -181,7 +181,7 @@ img:hover {
 }
 
 a.social-icon {
-    color: #0088cc;
+    color: #3ebeff;
 }
 
 a.social-icon:active {
