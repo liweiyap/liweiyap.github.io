@@ -172,7 +172,7 @@ img:hover {
 }
 
 /* social icons on same line */
-.list-inline {
+.list-inline-spaced-evenly {
     padding-left: 0;
     list-style: none;
     display: flex;
@@ -214,6 +214,21 @@ a.social-icon:active {
     margin-bottom: 0.5em;
     font-weight: normal;
     font-style: italic;
+}
+
+/* like .list-inline-spaced-evenly */
+/* for programming language icons */
+.list-inline {
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    margin-bottom: -5px;
+}
+
+/* separation between programming languages */
+/* https://stackoverflow.com/a/8185290/12367873 */
+span + span {
+    margin-left: 10px;
 }
 
 /* container for typewriter */
