@@ -1,5 +1,6 @@
 var typewriter = new Typewriter("#typewriter", {
-    cursor: '<span style="color:greenyellow;font-family:Inconsolata;font-size:90%;">█</span>'
+    cursor: '<span style="color:greenyellow;font-family:Inconsolata;font-size:90%;">█</span>',
+    delay: 25
 });
 
 typewriter
