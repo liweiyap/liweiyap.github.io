@@ -1,7 +1,11 @@
 <div class="sidebar">
     <div class="container">
         <!-- Picture of myself -->
-        <a href="https://liweiyap.github.io"><img class="sidebar-avatar" src="/assets/liwei.jpg" /></a>
+        {% if page.lang == "en" %}
+            <a href="{{ site.baseurl }}"><img class="sidebar-avatar" src="{{ site.baseurl }}assets/liwei.jpg" /></a>
+        {% elsif page.lang == "de" %}
+            <a href="../de"><img class="sidebar-avatar" src="../assets/liwei.jpg" /></a>
+        {% endif %}
         
         <!-- Description of myself -->
         <div class="sidebar-about">
@@ -9,7 +13,7 @@
 
             {% if page.lang == "en" %}
                 <p class="lead">{{ site.description.en }}</p>
-            {% else %}
+            {% elsif page.lang == "de" %}
                 <p class="lead">{{ site.description.de }}</p>
             {% endif %}
         </div>
@@ -36,7 +40,7 @@
                 </a>
             </li>
             <li>
-                <a href="{{ site.author.linkedin}}" target="_blank" class="social-icon">
+                <a href="{{ site.author.linkedin }}" target="_blank" class="social-icon">
                     <i class="fa fa-fw fa-linkedin-square"></i>
                 </a>
             </li>
@@ -45,14 +49,10 @@
         <!-- Languages -->
         <ul class="list-inline">
             <li>
-                <a href="{{ site.baseurl }}">
-                    <img src="/assets/united-kingdom.png" height="30px">
-                </a>
+                <a href=".."><img src="../assets/united-kingdom.png" height="30px"></a>
             </li>
             <li>
-                <a href="{{ site.baseurl }}de">
-                    <img src="/assets/germany.png" height="30px">
-                </a>
+                <a href="../de"><img src="../assets/germany.png" height="30px"></a>
             </li>
         </ul>
         
