@@ -21,6 +21,9 @@ body {
     margin-top: 0.75em;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    color: rgba(238,238,238,.6);
+}
 
 /*
  * Overwrite specific functions in `assets/css/hyde.css`
@@ -206,11 +209,22 @@ a.social-icon:active {
 
 /* add short description to post, just after post-title */
 .post-subtitle {
-    color: #000;
+    color: rgba(238,238,238,.6);
     margin-top: 0em;
     margin-bottom: 0.5em;
     font-weight: normal;
     font-style: italic;
+}
+
+/* container for typewriter */
+.container-typewriter {
+    max-width: 48rem;
+    min-height: 33rem;
+    padding-left:  0.5rem;
+    padding-right: 0.5rem;
+    margin-left:  auto;
+    margin-right: auto;
+    border: 4px solid #30475e;
 }
 
 /* separation between sidebar and content */
