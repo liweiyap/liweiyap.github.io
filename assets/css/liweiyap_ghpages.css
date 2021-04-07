@@ -234,8 +234,8 @@ a.social-icon:active {
 
 /* separation between programming languages */
 /* https://stackoverflow.com/a/8185290/12367873 */
-span + span {
-    margin-left: 10px;
+span {
+    margin-right: 10px;
 }
 
 /* container for typewriter */
