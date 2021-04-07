@@ -1,7 +1,11 @@
 <div class="sidebar">
     <div class="container">
         <!-- Picture of myself -->
-        <a href="https://liweiyap.github.io"><img class="sidebar-avatar" src="/assets/liwei.jpg" /></a>
+        {% if page.lang == "en" %}
+            <a href="{{ site.baseurl }}"><img class="sidebar-avatar" src="{{ site.baseurl }}assets/liwei.jpg" /></a>
+        {% else %}
+            <a href="{{ site.baseurl }}de"><img class="sidebar-avatar" src="{{ site.baseurl }}assets/liwei.jpg" /></a>
+        {% endif %}
         
         <!-- Description of myself -->
         <div class="sidebar-about">
@@ -36,7 +40,7 @@
                 </a>
             </li>
             <li>
-                <a href="{{ site.author.linkedin}}" target="_blank" class="social-icon">
+                <a href="{{ site.author.linkedin }}" target="_blank" class="social-icon">
                     <i class="fa fa-fw fa-linkedin-square"></i>
                 </a>
             </li>
