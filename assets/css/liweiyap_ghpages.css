@@ -57,6 +57,12 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+.content a:hover,
+.content a:focus {
+    opacity: 0.8;
+    text-decoration: none;
+}
+
 /* sidebar settings */
 .sidebar {
     text-align: center;
@@ -65,7 +71,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .sidebar a {
     color: #3ebeff;
-  }
+}
 
 .sidebar-about h1 {
     color: #eeeeee;
