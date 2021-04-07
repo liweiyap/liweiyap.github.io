@@ -228,6 +228,7 @@ a.social-icon:active {
     padding-left: 0;
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: -5px;
 }
 
