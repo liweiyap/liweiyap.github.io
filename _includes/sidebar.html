@@ -51,12 +51,8 @@
             <li>
                 {% if page.langref == "home" %}
                     <a href=".."><img src="../assets/united-kingdom.png" height="30px"></a>
-                {% elsif page.langref == "projects" %}
-                    <a href="../projects"><img src="../assets/united-kingdom.png" height="30px"></a>
-                {% elsif page.langref == "experience" %}
-                    <a href="../experience"><img src="../assets/united-kingdom.png" height="30px"></a>
-                {% elsif page.langref == "credits" %}
-                    <a href="../credits"><img src="../assets/united-kingdom.png" height="30px"></a>
+                {% else %}
+                    <a href="../{{ page.langref }}"><img src="../assets/united-kingdom.png" height="30px"></a>
                 {% endif %}
             </li>
             <li>
