@@ -21,6 +21,11 @@ body {
     margin-top: 0.75em;
 }
 
+code {
+    color: greenyellow;
+    background-color: #3F4144;
+}
+
 h1, h2, h3, h4, h5, h6 {
     color: rgba(238,238,238,.6);
 }
