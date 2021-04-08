@@ -49,14 +49,34 @@
         <!-- Languages -->
         <ul class="list-inline-spaced-evenly">
             <li>
-                <a href=".."><img src="../assets/united-kingdom.png" height="30px"></a>
+                {% if page.langref == "home" %}
+                    <a href=".."><img src="../assets/united-kingdom.png" height="30px"></a>
+                {% elsif page.langref == "projects" %}
+                    <a href="../projects"><img src="../assets/united-kingdom.png" height="30px"></a>
+                {% elsif page.langref == "experience" %}
+                    <a href="../experience"><img src="../assets/united-kingdom.png" height="30px"></a>
+                {% elsif page.langref == "credits" %}
+                    <a href="../credits"><img src="../assets/united-kingdom.png" height="30px"></a>
+                {% endif %}
             </li>
             <li>
-                <a href="../de"><img src="../assets/germany.png" height="30px"></a>
+                {% if page.langref == "home" %}
+                    <a href="../de"><img src="../assets/germany.png" height="30px"></a>
+                {% elsif page.langref == "projects" %}
+                    <a href="../de/nebenprojekte"><img src="../assets/germany.png" height="30px"></a>
+                {% elsif page.langref == "experience" %}
+                    <a href="../de/berufserfahrung"><img src="../assets/germany.png" height="30px"></a>
+                {% elsif page.langref == "credits" %}
+                    <a href="../de/quellenangaben"><img src="../assets/germany.png" height="30px"></a>
+                {% endif %}
             </li>
         </ul>
         
         <!-- Copyright notice & credits as footer -->
-        &copy; 2019-{{ site.time | date: '%Y' }}. <a href="{{ site.baseurl }}credits">Credits.</a>
+        {% if page.lang == "en" %}
+            &copy; 2019-{{ site.time | date: '%Y' }}. <a href="{{ site.baseurl }}credits">Credits.</a>
+        {% elsif page.lang == "de" %}
+            &copy; 2019-{{ site.time | date: '%Y' }}. <a href="{{ site.baseurl }}quellenangaben">Quellenangaben.</a>
+        {% endif %}
     </div>
 </div>
