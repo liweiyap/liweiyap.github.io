@@ -10,7 +10,7 @@ body {
 
 .page {
     text-align: justify;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
 }
 
 .post {
@@ -57,6 +57,12 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+.content a:hover,
+.content a:focus {
+    opacity: 0.8;
+    text-decoration: none;
+}
+
 /* sidebar settings */
 .sidebar {
     text-align: center;
@@ -65,7 +71,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .sidebar a {
     color: #3ebeff;
-  }
+}
 
 .sidebar-about h1 {
     color: #eeeeee;
@@ -159,20 +165,15 @@ a.sidebar-nav-item:focus {
 
 /* picture */
 .sidebar-avatar {
-    border-radius: 50%;
+    /* border-radius: 50%; */
     display: block;
     margin-left: auto;
     margin-right: auto;
     height: 120px;
 }
 
-img:hover {
-    opacity: 0.8;
-    filter: alpha(opacity=80);  /* For IE8 and earlier */
-}
-
 /* social icons on same line */
-.list-inline {
+.list-inline-spaced-evenly {
     padding-left: 0;
     list-style: none;
     display: flex;
@@ -214,6 +215,27 @@ a.social-icon:active {
     margin-bottom: 0.5em;
     font-weight: normal;
     font-style: italic;
+}
+
+/* like .list-inline-spaced-evenly */
+/* for programming language icons */
+.list-inline {
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: -5px;
+}
+
+img:hover {
+    opacity: 0.8;
+    filter: alpha(opacity=80);  /* For IE8 and earlier */
+}
+
+/* separation between programming languages */
+/* https://stackoverflow.com/a/8185290/12367873 */
+span {
+    margin-right: 10px;
 }
 
 /* container for typewriter */

@@ -1,39 +1,26 @@
 ---
 lang: en
+langref: home
 title: About Me
 layout: page
 ---
 <body>
     <h1>Summary</h1>
-    <p>I have just completed a master's degree in computational biology at <a href="https://cbb.ethz.ch/">ETH Zürich</a>. I enjoy the challenge of developing computational methods, and my goal is to become a more skilled programmer and more creative problem solver. I am currently looking for opportunites to gain practical experience in software development. <a href="/cv.pdf">Here</a> is my detailed CV.</p>
-    
-    <div class="row">
-        <div class="column">
-            <h1>Skills</h1>
-            <ul>
-                <li>C++, CMake</li>
-                <li>R, Matlab, Python, Java</li>
-                <li>HTML, CSS, Jekyll</li>
-                <li>Git</li>
-                <li>Scikit-Learn, TensorFlow</li>
-                <li>Pandas, NumPy</li>
-                <li>MPI</li>
-                <li>Bash</li>
-                <li>L<sup>A</sup>T<sub>E</sub>X</li>
-                <li>Active Oberon</li>
-                <li>SQL</li>
-                <li>Linux, Mac OS, Windows</li>
-            </ul>
-        </div>
-        
-        <div class="column">
-            <h1>Hobbies</h1>
-            <ul>
-                <li>Social-deduction board games</li>
-                <li>Comedy series</li>
-                <li>Football</li>
-            </ul>
-        </div>
-        
-    </div>  <!-- end row -->
+    <p>I am a junior software engineer. My background is in the life sciences; I hold a master's degree in computational biology from <a href="https://cbb.ethz.ch/">ETH Zürich</a>. My goal is to become a more skilled programmer and more creative problem solver. Lately, I have taken an interest in Android development and I am about to release my first app on the Google Play Store. <a href="/cv.pdf">Here</a> is my detailed CV.</p>
+
+    <h1>Skills</h1>
+    <p>I am comfortable in:</p>
+    {% include prog-icon-lists/comfortable.html %}
+    <p>I have basic knowledge of:</p>
+    {% include prog-icon-lists/basic.html %}
+    <p>I wish to learn:</p>
+    {% include prog-icon-lists/wishlist.html %}
+
+    <h1>Hobbies</h1>
+    <ul>
+        <li>Social-deduction board games (<i>The Resistance: Avalon</i>, <i>One Night Ultimate Werewolf</i>)</li>
+        <li>Comedy series (<i>The Office</i>, <i>Community</i>, <i>Arrested Development</i>, <i>Parks & Recreation</i>)</li>
+        <li>Football (fan of Liverpool F.C. since 2004)</li>
+        <li>Acoustic guitar (beginner)</li>
+    </ul>
 </body>
