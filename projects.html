@@ -8,9 +8,29 @@ layout: page
     <h1>Projects</h1>
 
     <div class="post">
+        <h2 class="post-title"><a href="https://github.com/liweiyap/text-popover-macOS">Text-Popover</a></h2>
+        <h3 class="post-subtitle">MacOS menu bar app in SwiftUI for language learners</h3>
+        <p>I used to live in Switzerland, and I do not wish to lose my German. Hence, I used the Python library <a href="https://pypi.org/project/beautifulsoup4/"><i>Beautiful Soup</i></a> to scrape a list of German idioms/expressions, as well as their respective meaning and history, from <a href="https://de.wikipedia.org/wiki/Liste_deutscher_Redewendungen">Wikipedia</a>, storing them in an <a href="https://www.sqlite.org/index.html">SQLite</a> database.</p>
+        <p>I then used the SwiftUI framework to create a desktop application that pops up at user-specified intervals, each time with a random expression from the SQLite database. These pop-ups serve as virtual placards for my regular revision of German expressions.</p>
+        <table>
+            <tr>
+              <th>Light mode</th>
+              <th>Dark mode</th>
+            </tr>
+            <tr>
+              <td><img src="assets/popover-lightmode.png" onmouseover="this.style.opacity=1;" /></td>
+              <td><img src="assets/popover-darkmode.png" onmouseover="this.style.opacity=1;" /></td>
+            </tr>
+        </table>
+        <p>The user can also open the settings window and creating new databases, so that the pop-up can display user-defined texts:</p>
+        <img src="assets/settingswindow.png" style="display: block; margin-left: auto; margin-right: auto; width:500px;" onmouseover="this.style.opacity=1;"/>
+        <img src="assets/inspirationalquote.png" style="display: block; margin-left: auto; margin-right: auto; width:350px;" onmouseover="this.style.opacity=1;"/>
+    </div>
+
+    <div class="post">
         <h2 class="post-title"><a href="https://github.com/liweiyap/SortingGitHubReposByCommits">Sorting GitHub Repositories by Commits</a></h2>
         <h3 class="post-subtitle">Web scraping in Python</h3>
-        <p>As I was interested in comparing the number of commits I myself have made to the respective default branch (usually <code>master</code> or <code>main</code>) of my personal repositories, I scraped the necessary data from the GitHub <a href="https://api.github.com/">API</a> using Python, and then sorted and organised the data in a <a href="https://github.com/pandas-dev/pandas">Pandas</a> dataframe.</p>
+        <p>As I was interested in comparing the number of commits I myself have made to the respective default branch (usually <code>master</code> or <code>main</code>) of my personal repositories, I scraped the necessary data from the GitHub <a href="https://api.github.com/">API</a> using Python, and then sorted and organised the data into a <a href="https://github.com/pandas-dev/pandas"><i>Pandas</i></a> dataframe.</p>
         <div id="typewriter" class="container-typewriter">
             <script type='text/javascript' src="assets/js/typewriter.js"></script>
         </div>
@@ -19,7 +39,7 @@ layout: page
     <div class="post">
         <h2 class="post-title"><a href="https://github.com/liweiyap/Conway_GameOfLife">Conway's Game of Life</a></h2>
         <h3 class="post-subtitle">Simulation of evolution in a grid-like population of cells in C++ with Qt</h3>
-        <p>Given a grid of cells, each cell has an initial state: <i>live</i> (1) or <i>dead</i> (0). Each cell interacts with its <a href="https://en.wikipedia.org/wiki/Moore_neighborhood">eight neighbours</a> (horizontal, vertical, or diagonal) using the following <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">four rules</a>:</p>
+        <p>Given a grid of cells, each cell has an initial state: <i>live</i> (1) or <i>dead</i> (0). Each cell interacts with its <a href="https://en.wikipedia.org/wiki/Moore_neighborhood">eight neighbours</a> (horizontal, vertical, or diagonal) using the following <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life#Rules">four rules</a>:</p>
         <a href="https://qualityswdev.com/2011/07/31/conways-game-of-life-in-scala/"><img src="../assets/rules.jpg" style="display: block; margin-left: auto; margin-right: auto; height:250px;"></a>
         <ol>
             <li>Any live cell with fewer than two live neighbours dies, as if caused by under-population <i>(inability to reproduce?)</i>.</li>

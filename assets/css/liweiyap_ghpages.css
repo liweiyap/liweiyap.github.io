@@ -30,6 +30,22 @@ h1, h2, h3, h4, h5, h6 {
     color: rgba(238,238,238,.6);
 }
 
+table {
+    border: 1px solid #eeeeee;
+}
+td {
+    padding: .5rem .5rem 0rem .5rem;
+    border: 1px solid #eeeeee;
+}
+th {
+    border: 1px solid #eeeeee;
+    text-align: center;
+}
+tbody tr:nth-child(odd) td,
+tbody tr:nth-child(odd) th {
+    background-color: #191b1f;
+}
+
 /*
  * Overwrite specific functions in `assets/css/hyde.css`
  */
