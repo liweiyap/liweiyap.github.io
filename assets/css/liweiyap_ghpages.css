@@ -165,16 +165,11 @@ a.sidebar-nav-item:focus {
 
 /* picture */
 .sidebar-avatar {
-    border-radius: 50%;
+    /* border-radius: 50%; */
     display: block;
     margin-left: auto;
     margin-right: auto;
     height: 120px;
-}
-
-img:hover {
-    opacity: 0.8;
-    filter: alpha(opacity=80);  /* For IE8 and earlier */
 }
 
 /* social icons on same line */
