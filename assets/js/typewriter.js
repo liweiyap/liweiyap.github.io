@@ -42,5 +42,5 @@ typewriter
     .typeString('<span style="color:greenyellow;font-family:Inconsolata;font-size:90%;">Total repositories: 16</span>')
     .typeString('<br/>')
     .typeString('<span style="color:greenyellow;font-family:Inconsolata;font-size:90%;">Total commits: 649</span>')
-    .typeString('<span style="color:greenyellow;font-family:Inconsolatas;font-size:90%;"><br/><br/>$ </span>')
+    .typeString('<span style="color:greenyellow;font-family:Inconsolata;font-size:90%;"><br/><br/>$ </span>')
     .start();
