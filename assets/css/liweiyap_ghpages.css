@@ -19,6 +19,7 @@ body {
 
 .post-title {
     margin-top: 0.75em;
+    color: rgba(238,238,238,.6);
 }
 
 code {
