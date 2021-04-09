@@ -43,13 +43,13 @@ layout: page
     <div class="post">
         <h2 class="post-title"><a href="https://github.com/liweiyap/Conway_GameOfLife">Conways Spiel des Lebens</a></h2>
         <h3 class="post-subtitle">Simulation der Evolution einer gitterförmigen Population von Zellen in C++ mit Qt</h3>
-        <p>Gegeben sei ein Gitter, in dem jedes Quadrat eine Zelle ist. Jede Zelle kann einen von zwei Zuständen einnehmen, welche als <i>lebendig</i> (1) und <i>tot</i> (0) bezeichnet werden. Unter den folgenden <a href="https://de.wikipedia.org/wiki/Conways_Spiel_des_Lebens#Die_Spielregeln">vier Regeln</a> hängt der Zustand einer Zelle in der Folgegeneration nur vom aktuellen Zustand der Zelle selbst und den aktuellen Zuständen ihrer <a href="https://de.wikipedia.org/wiki/Moore-Nachbarschaft">acht Nachbarzellen</a> (horizontal, vertikal, oder diagonal) ab:</p>
+        <p>Gegeben sei ein Gitter, in dem jedes Quadrat eine Zelle ist. Jede Zelle kann einen von zwei Zuständen einnehmen, welche als <i>lebendig</i> (1) oder <i>tot</i> (0) bezeichnet werden. Unter den folgenden <a href="https://de.wikipedia.org/wiki/Conways_Spiel_des_Lebens#Die_Spielregeln">vier Regeln</a> hängt der Zustand einer Zelle in der Folgegeneration nur vom aktuellen Zustand der Zelle selbst und den aktuellen Zuständen ihrer <a href="https://de.wikipedia.org/wiki/Moore-Nachbarschaft">acht Nachbarzellen</a> (horizontal, vertikal, oder diagonal) ab:</p>
         <a href="https://qualityswdev.com/2011/07/31/conways-game-of-life-in-scala/"><img src="../assets/rules.jpg" style="display: block; margin-left: auto; margin-right: auto; height:250px;"></a>
         <ol>
             <li>Lebende Zellen mit weniger als zwei lebenden Nachbarn sterben in der Folgegeneration an Unterbevölkerung <i>(z.B. wegen Einsamkeit)</i>.</li>
             <li>Eine lebende Zelle mit zwei oder drei lebenden Nachbarn bleibt in der Folgegeneration am Leben <i>(ideale Populationsdichte)</i>.</li>
             <li>Lebende Zellen mit mehr als drei lebenden Nachbarn sterben in der Folgegeneration an Überbevölkerung <i>(z.B. wegen mangelnder Nährstoffe)</i>.</li>
-            <li>Eine tote Zelle mit genau drei lebenden Nachbarn wird in der Folgegeneration neu geboren. <i>(ideale Populationsdichte)</i>.</li>
+            <li>Eine tote Zelle mit genau drei lebenden Nachbarn wird in der Folgegeneration neu geboren <i>(ideale Populationsdichte)</i>.</li>
         </ol>
         <img src="../assets/chequered_slower.gif" width="600" style="display: block; margin-left: auto; margin-right: auto; width:600px;" onmouseover="this.style.opacity=1;" />
         <img src="../assets/random_gen275.gif" width="600" style="display: block; margin-left: auto; margin-right: auto; width:600px;" onmouseover="this.style.opacity=1;"/>
