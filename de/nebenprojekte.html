@@ -25,16 +25,7 @@ layout: page
         <h3 class="post-subtitle">MacOS menu bar app in SwiftUI for language learners</h3>
         <p>I used to live in Switzerland, and I do not wish to lose my German. Hence, I used the Python library <a href="https://pypi.org/project/beautifulsoup4/"><i>Beautiful Soup</i></a> to scrape a list of German idioms/expressions, as well as their respective meaning and history, from <a href="https://de.wikipedia.org/wiki/Liste_deutscher_Redewendungen">Wikipedia</a>, storing them in an <a href="https://www.sqlite.org/index.html">SQLite</a> database.</p>
         <p>I then used the SwiftUI framework to create a desktop application that pops up at user-specified intervals, each time with a random expression from the SQLite database. These pop-ups serve as virtual placards for my regular revision of German expressions.</p>
-        <table>
-            <tr>
-              <th>Hellmodus</th>
-              <th>Dunkelmodus</th>
-            </tr>
-            <tr>
-              <td><img src="../assets/popover-lightmode.png" onmouseover="this.style.opacity=1;" /></td>
-              <td><img src="../assets/popover-darkmode.png" onmouseover="this.style.opacity=1;" /></td>
-            </tr>
-        </table>
+        {% include text-popover-carousel.html %}
         <p>The user can also open the settings window and create new databases, so that the pop-up can display user-defined texts:</p>
         <img src="../assets/settingswindow.png" style="display: block; margin-left: auto; margin-right: auto; width:500px;" onmouseover="this.style.opacity=1;"/>
         <img src="../assets/inspirationalquote.png" style="display: block; margin-left: auto; margin-right: auto; width:350px;" onmouseover="this.style.opacity=1;"/>
