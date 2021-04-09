@@ -34,22 +34,22 @@ layout: page
     <div class="post">
         <h2 class="post-title"><a href="https://github.com/liweiyap/SortingGitHubReposByCommits">GitHub-Repositorys nach Commits Sortieren</a></h2>
         <h3 class="post-subtitle">Web scraping in Python</h3>
-        <p>Ich wollte die Anzahl der Commits, die ich auf den jeweiligen Standardbranch (normalerweise <code>master</code> oder <code>main</code>) meiner persönlichen Repositorys, vergleichen. Deshalb habe ich die nötigen Daten in Python aus dem GitHub <a href="https://api.github.com/">API</a> ausgelesen. Danach habe ich die Daten in einer <a href="https://github.com/pandas-dev/pandas"><i>Pandas</i></a> Datenstruktur sortiert und angezeigt.</p>
+        <p>Ich wollte die Anzahl der Commits vergleichen, die ich auf den jeweiligen Standardbranch (normalerweise <code>master</code> oder <code>main</code>) meiner persönlichen Repositorys. Deshalb habe ich die nötigen Daten in Python aus dem GitHub <a href="https://api.github.com/">API</a> ausgelesen. Danach habe ich die Daten in einer <a href="https://github.com/pandas-dev/pandas"><i>Pandas</i></a> Datenstruktur sortiert und angezeigt.</p>
         <div id="typewriter" class="container-typewriter">
             <script type='text/javascript' src="../assets/js/typewriter.js"></script>
         </div>
     </div>
     
     <div class="post">
-        <h2 class="post-title"><a href="https://github.com/liweiyap/Conway_GameOfLife">Conway's Game of Life</a></h2>
-        <h3 class="post-subtitle">Simulation of evolution in a grid-like population of cells in C++ with Qt</h3>
-        <p>Given a grid of cells, each cell has an initial state: <i>live</i> (1) or <i>dead</i> (0). Each cell interacts with its <a href="https://en.wikipedia.org/wiki/Moore_neighborhood">eight neighbours</a> (horizontal, vertical, or diagonal) using the following <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life#Rules">four rules</a>:</p>
+        <h2 class="post-title"><a href="https://github.com/liweiyap/Conway_GameOfLife">Conways Spiel des Lebens</a></h2>
+        <h3 class="post-subtitle">Simulation der Evolution einer gitterförmigen Population von Zellen in C++ mit Qt</h3>
+        <p>Gegeben sei ein Gitter, in dem jedes Quadrat eine Zelle ist. Jede Zelle kann einen von zwei Zuständen einnehmen, welche als <i>lebendig</i> (1) und <i>tot</i> (0) bezeichnet werden. Unter den folgenden <a href="https://de.wikipedia.org/wiki/Conways_Spiel_des_Lebens#Die_Spielregeln">vier Regeln</a> hängt der Zustand einer Zelle in der Folgegeneration nur vom aktuellen Zustand der Zelle selbst und den aktuellen Zuständen ihrer <a href="https://de.wikipedia.org/wiki/Moore-Nachbarschaft">acht Nachbarzellen</a> (horizontal, vertikal, oder diagonal) ab:</p>
         <a href="https://qualityswdev.com/2011/07/31/conways-game-of-life-in-scala/"><img src="../assets/rules.jpg" style="display: block; margin-left: auto; margin-right: auto; height:250px;"></a>
         <ol>
-            <li>Any live cell with fewer than two live neighbours dies, as if caused by under-population <i>(inability to reproduce?)</i>.</li>
-            <li>Any live cell with two or three live neighbours lives on to the next generation <i>(ideal population density)</i>.</li>
-            <li>Any live cell with more than three live neighbours dies, as if by over-population <i>(scarce nutrients)</i>.</li>
-            <li>Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction <i>(ideal population density)</i>.</li>
+            <li>Lebende Zellen mit weniger als zwei lebenden Nachbarn sterben in der Folgegeneration an Unterbevölkerung <i>(z.B. wegen Einsamkeit)</i>.</li>
+            <li>Eine lebende Zelle mit zwei oder drei lebenden Nachbarn bleibt in der Folgegeneration am Leben <i>(ideale Populationsdichte)</i>.</li>
+            <li>Lebende Zellen mit mehr als drei lebenden Nachbarn sterben in der Folgegeneration an Überbevölkerung <i>(z.B. wegen mangelnder Nährstoffe)</i>.</li>
+            <li>Eine tote Zelle mit genau drei lebenden Nachbarn wird in der Folgegeneration neu geboren. <i>(ideale Populationsdichte)</i>.</li>
         </ol>
         <img src="../assets/chequered_slower.gif" width="600" style="display: block; margin-left: auto; margin-right: auto; width:600px;" onmouseover="this.style.opacity=1;" />
         <img src="../assets/random_gen275.gif" width="600" style="display: block; margin-left: auto; margin-right: auto; width:600px;" onmouseover="this.style.opacity=1;"/>
