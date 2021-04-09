@@ -10,44 +10,9 @@ layout: page
     <div class="post">
         <h2 class="post-title"><a href="https://github.com/liweiyap/narradir-android">Narradir</a></h2>
         <h3 class="post-subtitle">Android app in Java</h3>
-        <p>I developed a mobile app for automating night-time narration in the social-deduction board games <i>The Resistance: Avalon</i> and <i>Secret Hitler</i>. I synthesized the speech audio files for the narration via the <a href="https://cloud.google.com/text-to-speech">Text‐to‐Speech API</a> from the Google Cloud SDK using Bash scripting.
-        </p>
-        <link rel="styleSheet" href="assets/css/n-carousel.min.css">
-        <script src="assets/js/n-carousel.min.js" type="module"></script>
-        <div class="n-carousel n-carousel--controls-outside">
-            <ul class="n-carousel__content">
-                <li><img src="assets/narradir/screenshot-avalon-characterselection.png" style="display: block; margin-left: auto; margin-right: auto; height:500px;" onmouseover="this.style.opacity=1;"/></li>
-                <li><img src="assets/narradir/screenshot-avalon-play-close.png" style="display: block; margin-left: auto; margin-right: auto; height:500px;" onmouseover="this.style.opacity=1;"/></li>
-                <li><img src="assets/narradir/screenshot-avalon-play-minions-open.png" style="display: block; margin-left: auto; margin-right: auto; height:500px;" onmouseover="this.style.opacity=1;"/></li>
-                <li><img src="assets/narradir/screenshot-avalon-play-pause.png" style="display: block; margin-left: auto; margin-right: auto; height:500px;" onmouseover="this.style.opacity=1;"/></li>
-                <li><img src="assets/narradir/screenshot-avalon-play-minions-close.png" style="display: block; margin-left: auto; margin-right: auto; height:500px;" onmouseover="this.style.opacity=1;"/></li>
-                <li><img src="assets/narradir/screenshot-avalon-play-merlin.png" style="display: block; margin-left: auto; margin-right: auto; height:500px;" onmouseover="this.style.opacity=1;"/></li>
-                <li><img src="assets/narradir/screenshot-avalon-play-percival.png" style="display: block; margin-left: auto; margin-right: auto; height:500px;" onmouseover="this.style.opacity=1;"/></li>
-                <li><img src="assets/narradir/screenshot-avalon-play-wake.png" style="display: block; margin-left: auto; margin-right: auto; height:500px;" onmouseover="this.style.opacity=1;"/></li>
-                <li><img src="assets/narradir/screenshot-secrethitler-characterselection.png" style="display: block; margin-left: auto; margin-right: auto; height:500px;" onmouseover="this.style.opacity=1;"/></li>
-                <li><img src="assets/narradir/screenshot-secrethitler-play-fascists.png" style="display: block; margin-left: auto; margin-right: auto; height:500px;" onmouseover="this.style.opacity=1;"/></li>
-                <li><img src="assets/narradir/screenshot-settings.png" style="display: block; margin-left: auto; margin-right: auto; height:500px;" onmouseover="this.style.opacity=1;"/></li>
-            </ul>
-            <div class="n-carousel__previous">
-                <button></button>
-            </div>
-            <div class="n-carousel__next">
-                <button></button>
-            </div>
-            <div class="n-carousel__index">
-                <button style="min-width: 1em; min-height: 1em; width: 1em; height: 1em;"></button>
-                <button style="min-width: 1em; min-height: 1em; width: 1em; height: 1em;"></button>
-                <button style="min-width: 1em; min-height: 1em; width: 1em; height: 1em;"></button>
-                <button style="min-width: 1em; min-height: 1em; width: 1em; height: 1em;"></button>
-                <button style="min-width: 1em; min-height: 1em; width: 1em; height: 1em;"></button>
-                <button style="min-width: 1em; min-height: 1em; width: 1em; height: 1em;"></button>
-                <button style="min-width: 1em; min-height: 1em; width: 1em; height: 1em;"></button>
-                <button style="min-width: 1em; min-height: 1em; width: 1em; height: 1em;"></button>
-                <button style="min-width: 1em; min-height: 1em; width: 1em; height: 1em;"></button>
-                <button style="min-width: 1em; min-height: 1em; width: 1em; height: 1em;"></button>
-                <button style="min-width: 1em; min-height: 1em; width: 1em; height: 1em;"></button>
-            </div>
-        </div>
+        <p>I developed a mobile app for automating night-time narration in the social-deduction board games <i>The Resistance: Avalon</i> and <i>Secret Hitler</i>. I synthesized the speech audio files for the narration via the <a href="https://cloud.google.com/text-to-speech">Text‐to‐Speech API</a> from the Google Cloud SDK using Bash scripting.</p>
+        {% include narradir-carousel.html %}
+        <p>Diese App offers the following improvements over similar apps out there:</p>
         <p>This app offers the following improvements over similar apps out there:</p>
         <ul>
             <li>It allows the user to play a background sound during narration to help cover up any sounds made inadvertently by players.</li>

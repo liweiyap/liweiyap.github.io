@@ -5,28 +5,62 @@ title: Nebenprojekte
 layout: page
 ---
 <body>
-    <h1>Projects</h1>
+    <h1>Nebenprojekte</h1>
+
+    <div class="post">
+        <h2 class="post-title"><a href="https://github.com/liweiyap/narradir-android">Narradir</a></h2>
+        <h3 class="post-subtitle">Android-Applikation in Java</h3>
+        <p>Zum automatischen Erzählen der Nachtphase in den Deduktionsbrettspielen <i>Dem Widerstand: Avalon</i> und <i>Secret Hitler</i> habe ich eine mobile App entwickelt. Die Sprachsynthese fürs Erzählen habe ich mit dem <a href="https://cloud.google.com/text-to-speech">Text‐to‐Speech API</a> vom Google Cloud SDK durch Bash‐Skripte gemacht.</p>
+        {% include narradir-carousel.html %}
+        <p>Im Vergleich mit ähnlichen Anwendungen bietet <i>Narradir</i> folgende Vorteile an:</p>
+        <ul>
+            <li>Der/Die NutzerIn lässt sich ein Geräusch während dem Erzählen im Hintergrund spielen, um die von den Spielern unabsichtlich gemachten Geräusche zu übertönen.</li>
+            <li>Der/Die NutzerIn lässt sich die Dauer der Pause einstellen, während der bestimmte Figuren ihre jeweiligen Rollen ausführen müssen.</li>
+            <li>Bei <i>Dem Widerstand: Avalon</i> gibt es ein "intelligentes" System zur Auswahl der Figuren. Je nach der Anzahl der Spieler könnten unterschiedliche Figuren zur Auswahl stehen. Außerdem gelten es bestimmte Regeln zur Auswahl der Figuren. Werden manche Figuren ausgewählt bzw. abgewählt, könnte dann andere Figuren automatisch ausgewählt oder abgewählt.</li>
+        </ul>
+    </div>
+
+    <div class="post">
+        <h2 class="post-title"><a href="https://github.com/liweiyap/text-popover-macOS">Text-Popover</a></h2>
+        <h3 class="post-subtitle">MacOS menu bar app in SwiftUI for language learners</h3>
+        <p>I used to live in Switzerland, and I do not wish to lose my German. Hence, I used the Python library <a href="https://pypi.org/project/beautifulsoup4/"><i>Beautiful Soup</i></a> to scrape a list of German idioms/expressions, as well as their respective meaning and history, from <a href="https://de.wikipedia.org/wiki/Liste_deutscher_Redewendungen">Wikipedia</a>, storing them in an <a href="https://www.sqlite.org/index.html">SQLite</a> database.</p>
+        <p>I then used the SwiftUI framework to create a desktop application that pops up at user-specified intervals, each time with a random expression from the SQLite database. These pop-ups serve as virtual placards for my regular revision of German expressions.</p>
+        <table>
+            <tr>
+              <th>Hellmodus</th>
+              <th>Dunkelmodus</th>
+            </tr>
+            <tr>
+              <td><img src="../assets/popover-lightmode.png" onmouseover="this.style.opacity=1;" /></td>
+              <td><img src="../assets/popover-darkmode.png" onmouseover="this.style.opacity=1;" /></td>
+            </tr>
+        </table>
+        <p>The user can also open the settings window and create new databases, so that the pop-up can display user-defined texts:</p>
+        <img src="../assets/settingswindow.png" style="display: block; margin-left: auto; margin-right: auto; width:500px;" onmouseover="this.style.opacity=1;"/>
+        <img src="../assets/inspirationalquote.png" style="display: block; margin-left: auto; margin-right: auto; width:350px;" onmouseover="this.style.opacity=1;"/>
+    </div>
 
     <div class="post">
         <h2 class="post-title"><a href="https://github.com/liweiyap/SortingGitHubReposByCommits">Sorting GitHub Repositories by Commits</a></h2>
-        <h3 class="post-subtitle">Web Scraping</h3>
-        <p>I scraped the GitHub API using Python and organised the data output in a Pandas dataframe.</p>
+        <h3 class="post-subtitle">Web scraping in Python</h3>
+        <p>As I was interested in comparing the number of commits I myself have made to the respective default branch (usually <code>master</code> or <code>main</code>) of my personal repositories, I scraped the necessary data from the GitHub <a href="https://api.github.com/">API</a> using Python, and then sorted and organised the data into a <a href="https://github.com/pandas-dev/pandas"><i>Pandas</i></a> dataframe.</p>
         <div id="typewriter" class="container-typewriter">
             <script type='text/javascript' src="../assets/js/typewriter.js"></script>
         </div>
     </div>
     
     <div class="post">
-        <h2 class="post-title"><a href="https://github.com/liweiyap/MyCPU">My CPU</a></h2>
-        <h3 class="post-subtitle">Simulation of a simple stack-based CPU in C++</h3>
-        <p>The CPU contains an operand stack and a register. It processes a given code as a set of 32-bit hexadecimal instructions, which are parsed and disassembled into an opcode and an operand. See the <a href="https://github.com/liweiyap/MyCPU#example">README</a> for an example.</p>
-        <p>The stack is used to store the results of the elementary operations that are executed according to the opcode and operand. I designed my own stack to make the code easier to debug. The code was compiled using <a href="https://cmake.org/">CMake</a> and tested using the <a href="https://github.com/catchorg/Catch2">Catch2</a> header-only library.</p>
-    </div>
-    
-    <div class="post">
-        <h2 class="post-title"><a href="https://github.com/liweiyap/ProteinFolding">Predicting Protein Folding Is Difficult</a></h2>
-        <h3 class="post-subtitle">Simulation of the folding of a polypeptide in Matlab</h3>
-        <p>Proteins are large molecules made of building blocks known as amino acids. The prediction of the final folded structure of a protein from just its amino acid sequence is a major <a href="https://github.com/liweiyap/ProteinFolding#why-is-protein-folding-considered-an-unsolved-problem-in-biology">unsolved problem</a> in biology. In fact, in computer science, protein folding is considered an <a href="https://ieeexplore.ieee.org/document/6965037">NP-hard</a> problem.</p>
-        <p>In this project, I simulated a simple model of protein folding by applying the Metropolis condition, which probabilistically accepts a trial move of any amino acid residue based on the energy of its resulting interactions with other residues.</p>
+        <h2 class="post-title"><a href="https://github.com/liweiyap/Conway_GameOfLife">Conway's Game of Life</a></h2>
+        <h3 class="post-subtitle">Simulation of evolution in a grid-like population of cells in C++ with Qt</h3>
+        <p>Given a grid of cells, each cell has an initial state: <i>live</i> (1) or <i>dead</i> (0). Each cell interacts with its <a href="https://en.wikipedia.org/wiki/Moore_neighborhood">eight neighbours</a> (horizontal, vertical, or diagonal) using the following <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life#Rules">four rules</a>:</p>
+        <a href="https://qualityswdev.com/2011/07/31/conways-game-of-life-in-scala/"><img src="../assets/rules.jpg" style="display: block; margin-left: auto; margin-right: auto; height:250px;"></a>
+        <ol>
+            <li>Any live cell with fewer than two live neighbours dies, as if caused by under-population <i>(inability to reproduce?)</i>.</li>
+            <li>Any live cell with two or three live neighbours lives on to the next generation <i>(ideal population density)</i>.</li>
+            <li>Any live cell with more than three live neighbours dies, as if by over-population <i>(scarce nutrients)</i>.</li>
+            <li>Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction <i>(ideal population density)</i>.</li>
+        </ol>
+        <img src="../assets/chequered_slower.gif" width="600" style="display: block; margin-left: auto; margin-right: auto; width:600px;" onmouseover="this.style.opacity=1;" />
+        <img src="../assets/random_gen275.gif" width="600" style="display: block; margin-left: auto; margin-right: auto; width:600px;" onmouseover="this.style.opacity=1;"/>
     </div>
 </body>
