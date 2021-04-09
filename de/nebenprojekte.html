@@ -10,13 +10,13 @@ layout: page
     <div class="post">
         <h2 class="post-title"><a href="https://github.com/liweiyap/narradir-android">Narradir</a></h2>
         <h3 class="post-subtitle">Android-Applikation in Java</h3>
-        <p>Zum automatischen Erzählen der Nachtphase in den Deduktionsbrettspielen <i>Dem Widerstand: Avalon</i> und <i>Secret Hitler</i> habe ich eine mobile App entwickelt. Die Sprachsynthese fürs Erzählen habe ich mit dem <a href="https://cloud.google.com/text-to-speech">Text‐to‐Speech API</a> vom Google Cloud SDK durch Bash‐Skripte gemacht.</p>
+        <p>Zum automatischen Erzählen der Nachtphase in den Deduktionsbrettspielen <i>Dem Widerstand: Avalon</i> und <i>Secret Hitler</i> habe ich die mobile App <i>Narradir</i> entwickelt. Die Sprachsynthese fürs Erzählen habe ich mit dem <a href="https://cloud.google.com/text-to-speech">Text‐to‐Speech API</a> vom Google Cloud SDK durch Bash‐Skripte gemacht.</p>
         {% include narradir-carousel.html %}
         <p>Im Vergleich mit ähnlichen Anwendungen bietet <i>Narradir</i> folgende Vorteile an:</p>
         <ul>
             <li>Der/Die BenutzerIn lässt sich ein Geräusch während dem Erzählen im Hintergrund spielen, um die von den Spielern unabsichtlich gemachten Geräusche zu übertönen.</li>
             <li>Der/Die BenutzerIn lässt sich die Dauer der Pause einstellen, während der bestimmte Figuren ihre jeweiligen Rollen ausführen müssen.</li>
-            <li>Bei <i>Dem Widerstand: Avalon</i> gibt es ein „intelligentes“ System zur Auswahl der Figuren. Je nach der Anzahl der Spieler könnten unterschiedliche Figuren zur Auswahl stehen. Außerdem gelten es bestimmte Regeln zur Auswahl der Figuren. Werden manche Figuren ausgewählt bzw. abgewählt, könnten dann andere Figuren automatisch ausgewählt oder abgewählt.</li>
+            <li>Bei <i>Dem Widerstand: Avalon</i> gibt es ein „intelligentes“ System zur Auswahl der Figuren. Je nach der Anzahl der Spieler könnten unterschiedliche Figuren zur Auswahl stehen. Außerdem gelten es bestimmte Regeln zur Auswahl der Figuren. Werden manche Figuren ausgewählt bzw. abgewählt, könnten dann andere Figuren automatisch ausgewählt oder abgewählt werden.</li>
         </ul>
     </div>
 
@@ -34,7 +34,7 @@ layout: page
     <div class="post">
         <h2 class="post-title"><a href="https://github.com/liweiyap/SortingGitHubReposByCommits">GitHub-Repositorys nach Commits Sortieren</a></h2>
         <h3 class="post-subtitle">Web scraping in Python</h3>
-        <p>Ich wollte die Anzahl der Commits vergleichen, die ich auf den jeweiligen Standardbranch (normalerweise <code>master</code> oder <code>main</code>) meiner persönlichen Repositorys. Deshalb habe ich die nötigen Daten in Python aus dem GitHub <a href="https://api.github.com/">API</a> ausgelesen. Danach habe ich die Daten in einer <a href="https://github.com/pandas-dev/pandas"><i>Pandas</i></a> Datenstruktur sortiert und angezeigt.</p>
+        <p>Ich wollte die Anzahl der Commits vergleichen, die ich auf den jeweiligen Standardbranch (normalerweise <code>master</code> oder <code>main</code>) meiner persönlichen Repositorys gemacht habe. Deshalb habe ich die nötigen Daten in Python aus dem GitHub <a href="https://api.github.com/">API</a> ausgelesen. Danach habe ich die Daten in einer <a href="https://github.com/pandas-dev/pandas"><i>Pandas</i></a> Datenstruktur sortiert und angezeigt.</p>
         <div id="typewriter" class="container-typewriter">
             <script type='text/javascript' src="../assets/js/typewriter.js"></script>
         </div>
@@ -43,7 +43,7 @@ layout: page
     <div class="post">
         <h2 class="post-title"><a href="https://github.com/liweiyap/Conway_GameOfLife">Conways Spiel des Lebens</a></h2>
         <h3 class="post-subtitle">Simulation der Evolution einer gitterförmigen Population von Zellen in C++ mit Qt</h3>
-        <p>Gegeben sei ein Gitter, in dem jedes Quadrat eine Zelle ist. Jede Zelle kann einen von zwei Zuständen einnehmen, welche als <i>lebendig</i> (1) oder <i>tot</i> (0) bezeichnet werden. Unter den folgenden <a href="https://de.wikipedia.org/wiki/Conways_Spiel_des_Lebens#Die_Spielregeln">vier Regeln</a> hängt der Zustand einer Zelle in der Folgegeneration nur vom aktuellen Zustand der Zelle selbst und den aktuellen Zuständen ihrer <a href="https://de.wikipedia.org/wiki/Moore-Nachbarschaft">acht Nachbarzellen</a> (horizontal, vertikal, oder diagonal) ab:</p>
+        <p>Gegeben sei ein Gitter, in dem jedes Quadrat eine Zelle ist. Jede Zelle kann einen von zwei Zuständen einnehmen, welche als <i>lebendig</i> (1) oder <i>tot</i> (0) bezeichnet werden. Unter den folgenden <a href="https://de.wikipedia.org/wiki/Conways_Spiel_des_Lebens#Die_Spielregeln">vier Regeln</a> hängt der Zustand jeder Zelle in der Folgegeneration nur vom aktuellen Zustand der Zelle selbst und den aktuellen Zuständen ihrer <a href="https://de.wikipedia.org/wiki/Moore-Nachbarschaft">acht Nachbarzellen</a> (horizontal, vertikal, oder diagonal) ab:</p>
         <a href="https://qualityswdev.com/2011/07/31/conways-game-of-life-in-scala/"><img src="../assets/rules.jpg" style="display: block; margin-left: auto; margin-right: auto; height:250px;"></a>
         <ol>
             <li>Lebende Zellen mit weniger als zwei lebenden Nachbarn sterben in der Folgegeneration an Unterbevölkerung <i>(z.B. wegen Einsamkeit)</i>.</li>
