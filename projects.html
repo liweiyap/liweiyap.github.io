@@ -9,8 +9,10 @@ layout: page
 
     <div class="post">
         <h2 class="post-title"><a href="https://github.com/liweiyap/narradir-android">Narradir</a></h2>
-        <h3 class="post-subtitle">Android app in Java for automating night-time narration in <i>The Resistance: Avalon</i> and <i>Secret Hitler</i></h3>
-        <link rel="styleSheet" href="assets/css/n-carousel.css">
+        <h3 class="post-subtitle">Android app in Java</h3>
+        <p>I developed a mobile app for automating night-time narration in the social-deduction board games <i>The Resistance: Avalon</i> and <i>Secret Hitler</i>. I synthesized the speech audio files for the narration via the <a href="https://cloud.google.com/text-to-speech">Text‐to‐Speech API</a> from the Google Cloud SDK using Bash scripting.
+        </p>
+        <link rel="styleSheet" href="assets/css/n-carousel.min.css">
         <script src="assets/js/n-carousel.min.js" type="module"></script>
         <div class="n-carousel n-carousel--controls-outside">
             <ul class="n-carousel__content">
@@ -46,6 +48,12 @@ layout: page
                 <button style="min-width: 1em; min-height: 1em; width: 1em; height: 1em;"></button>
             </div>
         </div>
+        <p>This app offers the following improvements over similar apps out there:</p>
+        <ul>
+            <li>It allows the user to play a background sound during narration to help cover up any sounds made inadvertently by players.</li>
+            <li>It allows the user to change the pause length during which certain characters have to perform their roles.</li>
+            <li>In the case of <i>The Resistance: Avalon</i>, it provides a "smart" selection for the characters. As the number of players changes, the range of characters available for selection might also change. In addition, certain selection rules apply. Some characters will be automatically selected/deselected depending on the selection/deselection of other characters.</li>
+        </ul>
     </div>
 
     <div class="post">
