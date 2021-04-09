@@ -1,7 +1,7 @@
 /* https://stackoverflow.com/a/18032363/12367873 */
 
 function unhover(sidebarAvatar) {
-    sidebarAvatar.setAttribute('src', '../assets/logo.svg');
+    sidebarAvatar.setAttribute('src', '../assets/logo-whitesmoke.svg');
     sidebarAvatar.setAttribute('style', 'transition: 0.3s;');
 }
 

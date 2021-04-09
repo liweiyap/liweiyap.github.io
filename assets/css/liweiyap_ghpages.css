@@ -139,6 +139,16 @@ a.sidebar-nav-item:focus {
 
 
 /*
+ * Overwrite specific functions in `assets/css/n-carousel.css`
+ */
+
+.n-carousel__index {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*
  * New functions
  */
 
