@@ -13,7 +13,7 @@ typewriter
     .typeString('<br/>')
     .typeString('<span style="color:greenyellow;font-family:Inconsolata;font-size:90%;">LeetCode_Solutions .. | 97</span>')
     .typeString('<br/>')
-    .typeString('<span style="color:greenyellow;font-family:Inconsolata;font-size:90%;">liweiyap.github.io .. | 67</span>')
+    .typeString('<span style="color:greenyellow;font-family:Inconsolata;font-size:90%;">liweiyap.github.io .. | 68</span>')
     .typeString('<br/>')
     .typeString('<span style="color:greenyellow;font-family:Inconsolata;font-size:90%;">Conway_GameOfLife ... | 57</span>')
     .typeString('<br/>')
@@ -41,6 +41,6 @@ typewriter
     .typeString('<br/><br/>')
     .typeString('<span style="color:greenyellow;font-family:Inconsolata;font-size:90%;">Total repositories: 16</span>')
     .typeString('<br/>')
-    .typeString('<span style="color:greenyellow;font-family:Inconsolata;font-size:90%;">Total commits: 654</span>')
+    .typeString('<span style="color:greenyellow;font-family:Inconsolata;font-size:90%;">Total commits: 655</span>')
     .typeString('<span style="color:greenyellow;font-family:Inconsolata;font-size:90%;"><br/><br/>$</span>')
     .start();
