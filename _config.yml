@@ -3,9 +3,14 @@ description:
     en:       'Software Developer'
     de:       'Softwareentwickler'
 baseurl:      ''
+image:        'assets/logo-whitesmoke.svg'
 
 author:
     name:     'Li-Wei Yap'
     email:    'liweiyap@gmail.com'
     github:   'https://github.com/liweiyap'
     linkedin: 'https://www.linkedin.com/in/liweiyap/'
+    logo:     'assets/logo-whitesmoke.svg'
+
+plugins:
+    - jekyll-seo-tag
