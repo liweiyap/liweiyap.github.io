@@ -17,6 +17,8 @@ typewriter
     .typeString('<br/>')
     .typeString('<span style="color:greenyellow;font-family:Inconsolata;font-size:90%;">Conway_GameOfLife ... | 57</span>')
     .typeString('<br/>')
+    .typeString('<span style="color:greenyellow;font-family:Inconsolata;font-size:90%;">ProteinFolding ...... | 45</span>')
+    .typeString('<br/>')
     .typeString('<span style="color:greenyellow;font-family:Inconsolata;font-size:90%;">narradir-android .... | 44</span>')
     .typeString('<br/>')
     .typeString('<span style="color:greenyellow;font-family:Inconsolata;font-size:90%;">HackerRank-Solutions. | 43</span>')
