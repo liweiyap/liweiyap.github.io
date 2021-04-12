@@ -8,7 +8,7 @@ layout: page
     <h1>Nebenprojekte</h1>
 
     <div class="post">
-        <h2 class="post-title"><a href="https://github.com/liweiyap/narradir-android">Narradir</a></h2>
+        <h2 class="post-title"><a href="https://github.com/liweiyap/narradir-android" id="narradir">Narradir</a></h2>
         <h3 class="post-subtitle">Android-Applikation in Java</h3>
         <p>Zum automatischen Erzählen der Nachtphase in den Deduktionsbrettspielen <i>Dem Widerstand: Avalon</i> und <i>Secret Hitler</i> habe ich die mobile App <i>Narradir</i> entwickelt. Die Sprachsynthese fürs Erzählen habe ich mit dem <a href="https://cloud.google.com/text-to-speech">Text‐to‐Speech API</a> vom Google Cloud SDK durch Bash‐Skripte gemacht.</p>
         {% include narradir-carousel.html %}
@@ -23,7 +23,7 @@ layout: page
     <div class="post">
         <h2 class="post-title"><a href="https://github.com/liweiyap/text-popover-macOS">Text-Popover</a></h2>
         <h3 class="post-subtitle">MacOS Desktop-Applikation in SwiftUI für Fremdsprache-Lernende</h3>
-        <p>Ich bin unlängst aus der Schweiz ausgezogen aber ich will nicht mein Deutsch vergessen. Deshalb habe ich mit der Python-Bibliothek <a href="https://pypi.org/project/beautifulsoup4/"><i>Beautiful Soup</i></a> eine Liste deutsche Redewendungen sowie ihre jeweilige Bedeutung und Geschichte aus <a href="https://de.wikipedia.org/wiki/Liste_deutscher_Redewendungen">Wikipedia</a> ausgelesen. Diese Daten habe ich in einer <a href="https://www.sqlite.org/index.html">SQLite</a> Datenbank gespeichert.</p>
+        <p>Ich bin unlängst aus der Schweiz ausgezogen aber ich will mein Deutsch nicht vergessen. Deshalb habe ich mit der Python-Bibliothek <a href="https://pypi.org/project/beautifulsoup4/"><i>Beautiful Soup</i></a> eine Liste deutsche Redewendungen sowie ihre jeweilige Bedeutung und Geschichte aus <a href="https://de.wikipedia.org/wiki/Liste_deutscher_Redewendungen">Wikipedia</a> ausgelesen. Diese Daten habe ich in einer <a href="https://www.sqlite.org/index.html">SQLite</a> Datenbank gespeichert.</p>
         <p>Danach habe ich mit SwiftUI eine App für die Menüleiste geschrieben. Die App poppt in vom Benutzer spezifizierten Intervallen mit einer aus der SQLite Datenbank zufällig ausgewählten Redewendung auf. Diese Pop-ups dienen als virtuelle Zettel für mein regelmäßiges Lernen.</p>
         {% include text-popover-carousel.html %}
         <p>Der/Die BenutzerIn lässt sich auch das Einstellungsmenü öffnen und neue Datenbanken kreieren, damit das Pop-up andere vom Benutzer spezifizierten Texte anzeigen könnte:</p>
