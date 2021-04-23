@@ -45,7 +45,10 @@ layout: page
         <h2 class="post-title"><a href="https://github.com/liweiyap/Conway_GameOfLife">Conway's Game of Life</a></h2>
         <h3 class="post-subtitle">Simulation of evolution in a grid-like population of cells in C++ with Qt</h3>
         <p>Given a grid of cells, each cell has an initial state: <i>live</i> (1) or <i>dead</i> (0). Each cell interacts with its <a href="https://en.wikipedia.org/wiki/Moore_neighborhood">eight neighbours</a> (horizontal, vertical, or diagonal) using the following <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life#Rules">four rules</a>:</p>
-        <a href="https://qualityswdev.com/2011/07/31/conways-game-of-life-in-scala/"><img src="../assets/rules.jpg" style="display: block; margin-left: auto; margin-right: auto; height:250px;"></a>
+        <!-- https://stackoverflow.com/a/41107163/12367873 -->
+        <div style="width:100%;text-align:center;">
+            <a href="https://qualityswdev.com/2011/07/31/conways-game-of-life-in-scala/" onmouseover="this.style.opacity=1;"><img src="../assets/rules.jpg" style="display:initial; height:250px;"></a>
+        </div>
         <ol>
             <li>Any live cell with fewer than two live neighbours dies, as if caused by under-population <i>(inability to reproduce)</i>.</li>
             <li>Any live cell with two or three live neighbours lives on to the next generation <i>(ideal population density)</i>.</li>
