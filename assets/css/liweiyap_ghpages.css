@@ -266,11 +266,6 @@ a.social-icon:active {
     margin-bottom: -5px;
 }
 
-img:hover {
-    opacity: 0.8;
-    filter: alpha(opacity=80);  /* For IE8 and earlier */
-}
-
 /* separation between programming languages */
 /* https://stackoverflow.com/a/8185290/12367873 */
 span {
