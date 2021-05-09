@@ -11,7 +11,7 @@ layout: page
         <h2 class="post-title"><a href="https://github.com/liweiyap/narradir-android" id="narradir">Narradir</a></h2>
         <h3 class="post-subtitle">Android app in Java</h3>
         <a href='https://play.google.com/store/apps/details?id=com.liweiyap.narradir&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' onmouseover="this.style.opacity=1;"><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' style="height:70px; display:initial; margin-bottom: 0.6em;"/></a>
-        <p>I developed a mobile app for automating night-time narration in the social-deduction board games <i>The Resistance: Avalon</i> and <i>Secret Hitler</i>. I synthesized the speech audio files for the narration via the <a href="https://cloud.google.com/text-to-speech">Text‐to‐Speech API</a> from the Google Cloud SDK using Bash scripting.</p>
+        <p>I developed a mobile app for automating night-time narration in the social-deduction board games <i>The Resistance: Avalon</i> and <i>Secret Hitler</i> using the <a href="https://github.com/google/ExoPlayer"><i>ExoPlayer</i></a> library. I synthesized the speech audio files for the narration via the <a href="https://cloud.google.com/text-to-speech">Text‐to‐Speech API</a> from the Google Cloud SDK using Bash scripting.</p>
         {% include narradir-carousel.html %}
         This app offers the following improvements over similar apps out there:
         <ul>
@@ -28,8 +28,15 @@ layout: page
         <p>I then used the SwiftUI framework to create a desktop application that pops up at user-specified intervals, each time with a random expression from the SQLite database. These pop-ups serve as virtual placards for my regular revision of German expressions.</p>
         {% include text-popover-carousel.html %}
         <p>The user can also open the settings window and create new databases, so that the pop-up can display other user-defined texts:</p>
-        <img src="assets/settingswindow.png" style="display: block; margin-left: auto; margin-right: auto; width:500px;"/>
-        <img src="assets/inspirationalquote.png" style="display: block; margin-left: auto; margin-right: auto; width:350px;"/>
+        <img src="assets/text-popover/settingswindow.png" style="display: block; margin-left: auto; margin-right: auto; width:500px;"/>
+        <img src="assets/text-popover/inspirationalquote.png" style="display: block; margin-left: auto; margin-right: auto; width:350px;"/>
+    </div>
+
+    <div class="post">
+        <h2 class="post-title"><a href="https://github.com/liweiyap/xkcdbrowser-android">XKCD Browser</a></h2>
+        <h3 class="post-subtitle">Android app in Java</h3>
+        <p>I developed a simple mobile app to browse <a href="https://xkcd.com/">XKCD</a> comic strips. The JSON data of every strip is retrieved from the XKCD website using the <a href="https://github.com/google/volley"><i>Volley</i></a> library. The user can zoom in and out of the displayed comic strip, display the artist's personal description of the comic strip via a long press, navigate to a different comic strip number, and even save the displayed comic strip to the Photo Gallery.</p>
+        {% include xkcdbrowser-carousel.html %}
     </div>
 
     <div class="post">
@@ -47,7 +54,7 @@ layout: page
         <p>Given a grid of cells, each cell has an initial state: <i>live</i> (1) or <i>dead</i> (0). Each cell interacts with its <a href="https://en.wikipedia.org/wiki/Moore_neighborhood">eight neighbours</a> (horizontal, vertical, or diagonal) using the following <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life#Rules">four rules</a>:</p>
         <!-- https://stackoverflow.com/a/41107163/12367873 -->
         <div style="width:100%;text-align:center;">
-            <a href="https://qualityswdev.com/2011/07/31/conways-game-of-life-in-scala/" onmouseover="this.style.opacity=1;"><img src="../assets/rules.jpg" style="display:initial; height:250px;"></a>
+            <a href="https://qualityswdev.com/2011/07/31/conways-game-of-life-in-scala/" onmouseover="this.style.opacity=1;"><img src="../assets/conway/rules.jpg" style="display:initial; height:250px;"></a>
         </div>
         <ol>
             <li>Any live cell with fewer than two live neighbours dies, as if caused by under-population <i>(inability to reproduce)</i>.</li>
@@ -55,7 +62,7 @@ layout: page
             <li>Any live cell with more than three live neighbours dies, as if by over-population <i>(scarce nutrients)</i>.</li>
             <li>Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction <i>(ideal population density)</i>.</li>
         </ol>
-        <img src="assets/chequered_slower.gif" width="600" style="display: block; margin-left: auto; margin-right: auto; width:600px;"/>
-        <img src="assets/random_gen275.gif" width="600" style="display: block; margin-left: auto; margin-right: auto; width:600px;"/>
+        <img src="assets/conway/chequered_slower.gif" width="600" style="display: block; margin-left: auto; margin-right: auto; width:600px;"/>
+        <img src="assets/conway/random_gen275.gif" width="600" style="display: block; margin-left: auto; margin-right: auto; width:600px;"/>
     </div>
 </body>

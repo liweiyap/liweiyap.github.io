@@ -227,10 +227,6 @@ a.social-icon {
     color: #3ebeff;
 }
 
-a.social-icon:active {
-    color: inherit;
-}
-
 /* flag icons (does not work) */
 .flag-icon {
     height: 30px;
