@@ -28,8 +28,8 @@ layout: page
         <p>Danach habe ich mit SwiftUI eine App für die Menüleiste geschrieben. Die App poppt in vom Benutzer spezifizierten Intervallen mit einer aus der SQLite Datenbank zufällig ausgewählten Redewendung auf. Diese Pop-ups dienen als virtuelle Zettel für mein regelmäßiges Lernen.</p>
         {% include text-popover-carousel.html %}
         <p>Der/Die BenutzerIn lässt sich auch das Einstellungsmenü öffnen und neue Datenbanken kreieren, damit das Pop-up andere vom Benutzer spezifizierten Texte anzeigen könnte:</p>
-        <img src="../assets/settingswindow.png" style="display: block; margin-left: auto; margin-right: auto; width:500px;"/>
-        <img src="../assets/inspirationalquote.png" style="display: block; margin-left: auto; margin-right: auto; width:350px;"/>
+        <img src="../assets/text-popover/settingswindow.png" style="display: block; margin-left: auto; margin-right: auto; width:500px;"/>
+        <img src="../assets/text-popover/inspirationalquote.png" style="display: block; margin-left: auto; margin-right: auto; width:350px;"/>
     </div>
 
     <div class="post">
@@ -54,7 +54,7 @@ layout: page
         <p>Gegeben sei ein Gitter, in dem jedes Quadrat eine Zelle ist. Jede Zelle kann einen von zwei Zuständen einnehmen, welche als <i>lebendig</i> (1) oder <i>tot</i> (0) bezeichnet werden. Unter den folgenden <a href="https://de.wikipedia.org/wiki/Conways_Spiel_des_Lebens#Die_Spielregeln">vier Regeln</a> hängt der Zustand jeder Zelle in der Folgegeneration nur vom aktuellen Zustand der Zelle selbst und den aktuellen Zuständen ihrer <a href="https://de.wikipedia.org/wiki/Moore-Nachbarschaft">acht Nachbarzellen</a> (horizontal, vertikal, oder diagonal) ab:</p>
         <!-- https://stackoverflow.com/a/41107163/12367873 -->
         <div style="width:100%;text-align:center;">
-            <a href="https://qualityswdev.com/2011/07/31/conways-game-of-life-in-scala/" onmouseover="this.style.opacity=1;"><img src="../assets/rules.jpg" style="display:initial; height:250px;"></a>
+            <a href="https://qualityswdev.com/2011/07/31/conways-game-of-life-in-scala/" onmouseover="this.style.opacity=1;"><img src="../assets/conway/rules.jpg" style="display:initial; height:250px;"></a>
         </div>
         <ol>
             <li>Lebende Zellen mit weniger als zwei lebenden Nachbarn sterben in der Folgegeneration an Unterbevölkerung <i>(z.B. wegen Einsamkeit)</i>.</li>
@@ -62,7 +62,7 @@ layout: page
             <li>Lebende Zellen mit mehr als drei lebenden Nachbarn sterben in der Folgegeneration an Überbevölkerung <i>(z.B. wegen mangelnder Nährstoffe)</i>.</li>
             <li>Eine tote Zelle mit genau drei lebenden Nachbarn wird in der Folgegeneration neu geboren <i>(ideale Populationsdichte)</i>.</li>
         </ol>
-        <img src="../assets/chequered_slower.gif" width="600" style="display: block; margin-left: auto; margin-right: auto; width:600px;"/>
-        <img src="../assets/random_gen275.gif" width="600" style="display: block; margin-left: auto; margin-right: auto; width:600px;"/>
+        <img src="../assets/conway/chequered_slower.gif" width="600" style="display: block; margin-left: auto; margin-right: auto; width:600px;"/>
+        <img src="../assets/conway/random_gen275.gif" width="600" style="display: block; margin-left: auto; margin-right: auto; width:600px;"/>
     </div>
 </body>
