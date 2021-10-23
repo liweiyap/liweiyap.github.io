@@ -6,6 +6,6 @@ function unhover(sidebarAvatar) {
 }
 
 function hover(sidebarAvatar) {
-    sidebarAvatar.setAttribute('src', '../assets/liwei.jpg');
+    sidebarAvatar.setAttribute('src', '../assets/liwei.jpg');  /* the converter I used produced a webp with larger size */
     sidebarAvatar.setAttribute('style', 'border-radius: 50%; opacity: 1.0; filter: alpha(opacity=100); transition: 0.3s;');
 }
