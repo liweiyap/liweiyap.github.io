@@ -82,6 +82,7 @@ tbody tr:nth-child(odd) th {
 .content a:hover,
 .content a:focus {
     opacity: 0.8;
+    filter: alpha(opacity=80);  /* For IE8 and earlier */
     text-decoration: none;
 }
 
@@ -104,6 +105,7 @@ tbody tr:nth-child(odd) th {
 .sidebar a:hover,
 .sidebar a:focus {
     opacity: 0.8;
+    filter: alpha(opacity=80);  /* For IE8 and earlier */
     text-decoration: none;
 }
 
@@ -200,6 +202,12 @@ a.sidebar-nav-item:focus {
 .theme-base-0j .related-posts li a:hover {
     text-decoration: none;
     color: #0000ff;
+}
+
+/* select which images [img] we want to dim on hover */
+.dim-on-hover:hover {
+    opacity: 0.8;
+    filter: alpha(opacity=80);  /* For IE8 and earlier */
 }
 
 /* picture */
