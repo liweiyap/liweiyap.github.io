@@ -7,5 +7,5 @@ function unhover(sidebarAvatar) {
 
 function hover(sidebarAvatar) {
     sidebarAvatar.setAttribute('src', '../assets/liwei.jpg');
-    sidebarAvatar.setAttribute('style', 'border-radius: 50%; opacity: 1.0; transition: 0.3s;');
+    sidebarAvatar.setAttribute('style', 'border-radius: 50%; opacity: 1.0; filter: alpha(opacity=100); transition: 0.3s;');
 }
