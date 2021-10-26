@@ -204,8 +204,13 @@ a.sidebar-nav-item:focus {
     color: #0000ff;
 }
 
-/* select which images [img] we want to dim on hover */
+/* select which images [img] we want to dim on hover and focus */
 .dim-on-hover:hover {
+    opacity: 0.8;
+    filter: alpha(opacity=80);  /* For IE8 and earlier */
+}
+
+a:focus .dim-on-focus {
     opacity: 0.8;
     filter: alpha(opacity=80);  /* For IE8 and earlier */
 }

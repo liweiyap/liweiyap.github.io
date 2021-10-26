@@ -50,20 +50,20 @@
         <ul class="list-inline-spaced-evenly">
             <li>
                 {% if page.langref == "home" %}
-                    <a href=".."><img src="../assets/flags/united-kingdom.svg" height="30px" class="dim-on-hover"></a>
+                    <a href=".."><img src="../assets/flags/united-kingdom.svg" height="30px" class="dim-on-hover dim-on-focus"></a>
                 {% else %}
-                    <a href="../{{ page.langref }}"><img src="../assets/flags/united-kingdom.svg" height="30px" class="dim-on-hover"></a>
+                    <a href="../{{ page.langref }}"><img src="../assets/flags/united-kingdom.svg" height="30px" class="dim-on-hover dim-on-focus"></a>
                 {% endif %}
             </li>
             <li>
                 {% if page.langref == "home" %}
-                    <a href="../de"><img src="../assets/flags/germany.svg" height="30px" class="dim-on-hover"></a>
+                    <a href="../de"><img src="../assets/flags/germany.svg" height="30px" class="dim-on-hover dim-on-focus"></a>
                 {% elsif page.langref == "projects" %}
-                    <a href="../de/nebenprojekte"><img src="../assets/flags/germany.svg" height="30px" class="dim-on-hover"></a>
+                    <a href="../de/nebenprojekte"><img src="../assets/flags/germany.svg" height="30px" class="dim-on-hover dim-on-focus"></a>
                 {% elsif page.langref == "experience" %}
-                    <a href="../de/berufserfahrung"><img src="../assets/flags/germany.svg" height="30px" class="dim-on-hover"></a>
+                    <a href="../de/berufserfahrung"><img src="../assets/flags/germany.svg" height="30px" class="dim-on-hover dim-on-focus"></a>
                 {% elsif page.langref == "credits" %}
-                    <a href="../de/quellenangaben"><img src="../assets/flags/germany.svg" height="30px" class="dim-on-hover"></a>
+                    <a href="../de/quellenangaben"><img src="../assets/flags/germany.svg" height="30px" class="dim-on-hover dim-on-focus"></a>
                 {% endif %}
             </li>
         </ul>
