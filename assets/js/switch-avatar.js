@@ -1,5 +1,8 @@
 /* https://stackoverflow.com/a/18032363/12367873 */
 
+// set transition in both functions, and in JS rather than in CSS or HTML,
+// otherwise we cannot get rid of corner radius when sidebar avatar is logo SVGs
+
 function unhover(sidebarAvatar) {
     sidebarAvatar.setAttribute('src', '../assets/logo-whitesmoke.svg');
     sidebarAvatar.setAttribute('style', 'transition: 0.3s;');
