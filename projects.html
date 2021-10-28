@@ -10,7 +10,7 @@ layout: page
     <div class="post">
         <h2 class="post-title"><a href="https://github.com/liweiyap/narradir-android" id="narradir">Narradir</a></h2>
         <h3 class="post-subtitle">Android app in Java</h3>
-        <a href='https://play.google.com/store/apps/details?id=com.liweiyap.narradir&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' onmouseover="this.style.opacity=1; this.style.filter=alpha(opacity=100);"><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' style="height:70px; display:initial; margin-bottom: 0.6em;"/></a>
+        <a href='https://play.google.com/store/apps/details?id=com.liweiyap.narradir&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' onmouseover="this.style.opacity=1; this.style.filter=alpha(opacity=100);"><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' class="google-playstore-badge"/></a>
         <p>I developed a mobile app for automating night-time narration in the social-deduction board games <i>The Resistance: Avalon</i> and <i>Secret Hitler</i> using the <a href="https://github.com/google/ExoPlayer"><i>ExoPlayer</i></a> library. I synthesized the speech audio files for the narration via the <a href="https://cloud.google.com/text-to-speech">Text‐to‐Speech API</a> from the Google Cloud SDK using Bash scripting.</p>
         {% include narradir-carousel.html %}
         This app offers the following improvements over similar apps out there:
@@ -52,9 +52,8 @@ layout: page
         <h2 class="post-title"><a href="https://github.com/liweiyap/Conway_GameOfLife">Conway's Game of Life</a></h2>
         <h3 class="post-subtitle">Simulation of evolution in a grid-like population of cells in C++ with Qt</h3>
         <p>Given a grid of cells, each cell has an initial state: <i>live</i> (1) or <i>dead</i> (0). Each cell interacts with its <a href="https://en.wikipedia.org/wiki/Moore_neighborhood">eight neighbours</a> (horizontal, vertical, or diagonal) using the following <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life#Rules">four rules</a>:</p>
-        <!-- https://stackoverflow.com/a/41107163/12367873 -->
-        <div style="width:100%;text-align:center;">
-            <a href="https://qualityswdev.com/2011/07/31/conways-game-of-life-in-scala/" onmouseover="this.style.opacity=1; this.style.filter=alpha(opacity=100);"><img src="../assets/conway/rules.webp" style="display:initial; height:250px;"></a>
+        <div class="container-centered-with-limited-clickable-span">
+            <a href="https://qualityswdev.com/2011/07/31/conways-game-of-life-in-scala/" onmouseover="this.style.opacity=1; this.style.filter=alpha(opacity=100);"><img src="../assets/conway/rules.webp" height="250px"></a>
         </div>
         <ol>
             <li>Any live cell with fewer than two live neighbours dies, as if caused by under-population <i>(inability to reproduce)</i>.</li>
