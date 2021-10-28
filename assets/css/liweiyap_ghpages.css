@@ -294,6 +294,16 @@ span {
     margin-right: auto;
 }
 
+.container-img-with-limited-clickable-span {
+    /* https://stackoverflow.com/a/41107163/12367873 */
+    width: 100%;
+    text-align: center;
+}
+
+.container-img-with-limited-clickable-span img {
+    display: initial;
+}
+
 /* container for typewriter */
 .container-typewriter {
     max-width: 48rem;

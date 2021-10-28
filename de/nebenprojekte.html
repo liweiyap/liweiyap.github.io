@@ -52,9 +52,8 @@ layout: page
         <h2 class="post-title"><a href="https://github.com/liweiyap/Conway_GameOfLife">Conways Spiel des Lebens</a></h2>
         <h3 class="post-subtitle">Simulation der Evolution einer gitterförmigen Population von Zellen in C++ mit Qt</h3>
         <p>Gegeben sei ein Gitter, in dem jedes Quadrat eine Zelle ist. Jede Zelle kann einen von zwei Zuständen einnehmen, welche als <i>lebendig</i> (1) oder <i>tot</i> (0) bezeichnet werden. Unter den folgenden <a href="https://de.wikipedia.org/wiki/Conways_Spiel_des_Lebens#Die_Spielregeln">vier Regeln</a> hängt der Zustand jeder Zelle in der Folgegeneration nur vom aktuellen Zustand der Zelle selbst und den aktuellen Zuständen ihrer <a href="https://de.wikipedia.org/wiki/Moore-Nachbarschaft">acht Nachbarzellen</a> (horizontal, vertikal, oder diagonal) ab:</p>
-        <!-- https://stackoverflow.com/a/41107163/12367873 -->
-        <div style="width:100%;text-align:center;">
-            <a href="https://qualityswdev.com/2011/07/31/conways-game-of-life-in-scala/" onmouseover="this.style.opacity=1; this.style.filter=alpha(opacity=100);"><img src="../assets/conway/rules.webp" style="display:initial; height:250px;"></a>
+        <div class="container-img-with-limited-clickable-span">
+            <a href="https://qualityswdev.com/2011/07/31/conways-game-of-life-in-scala/" onmouseover="this.style.opacity=1; this.style.filter=alpha(opacity=100);"><img src="../assets/conway/rules.webp" height="250px"></a>
         </div>
         <ol>
             <li>Lebende Zellen mit weniger als zwei lebenden Nachbarn sterben in der Folgegeneration an Unterbevölkerung <i>(z.B. wegen Einsamkeit)</i>.</li>
