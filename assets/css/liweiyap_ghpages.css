@@ -294,14 +294,20 @@ span {
     margin-right: auto;
 }
 
-.container-img-with-limited-clickable-span {
+.container-centered-with-limited-clickable-span {
     /* https://stackoverflow.com/a/41107163/12367873 */
     width: 100%;
     text-align: center;
 }
 
-.container-img-with-limited-clickable-span img {
+.container-centered-with-limited-clickable-span img {
     display: initial;
+}
+
+.google-playstore-badge {
+    height: 70px;
+    display: initial;
+    margin-bottom: 0.6em;
 }
 
 /* container for typewriter */
