@@ -287,8 +287,8 @@ span {
     margin-right: 10px;
 }
 
-/* carousel */
-.carousel-img {
+/* carousel and others */
+.centered-img {
     display: block;
     margin-left: auto;
     margin-right: auto;
