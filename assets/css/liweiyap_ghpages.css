@@ -1,5 +1,5 @@
 /*
- * Overwrite specific functions in `assets/css/poole.css`
+ * Override specific functions in `assets/css/poole.css`
  */
 
 /* words on page */
@@ -48,7 +48,7 @@ tbody tr:nth-child(odd) th {
 }
 
 /*
- * Overwrite specific functions in `assets/css/hyde.css`
+ * Override specific functions in `assets/css/hyde.css`
  */
 
 /* font size when stretching */
@@ -142,13 +142,20 @@ a.sidebar-nav-item:focus {
 
 
 /*
- * Overwrite specific functions in `assets/css/n-carousel.css`
+ * Override specific functions in `assets/css/n-carousel.css`
  */
 
 .n-carousel__index {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 1em;
+}
+
+.n-carousel__index button {
+    min-width: 1em;
+    min-height: 1em;
+    width: 1em;
+    height: 1em;
 }
 
 
@@ -217,7 +224,6 @@ a:focus .dim-on-focus {
 
 /* picture */
 .sidebar-avatar {
-    /* border-radius: 50%; */
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -279,6 +285,13 @@ a.social-icon {
 /* https://stackoverflow.com/a/8185290/12367873 */
 span {
     margin-right: 10px;
+}
+
+/* carousel and others */
+.centered-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* container for typewriter */
