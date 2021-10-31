@@ -12,9 +12,9 @@
             <h1>{{ site.author.name }}</h1>
 
             {% if page.lang == "en" %}
-                <p class="lead">{{ site.description.en }}</p>
+                <p class="lead">{{ site.preferred_description.en }}</p>
             {% elsif page.lang == "de" %}
-                <p class="lead">{{ site.description.de }}</p>
+                <p class="lead">{{ site.preferred_description.de }}</p>
             {% endif %}
         </div>
         

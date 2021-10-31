@@ -1,8 +1,10 @@
-title:        'Li-Wei'
-description:
-    en:       'Software Developer'
-    de:       'Softwareentwickler'
+title:        'Li-Wei Yap'
+name:         'Li-Wei Yap'
+tagline:      'Software Developer at AnyDesk in Stuttgart, Germany'
+description:  'Software Developer at AnyDesk in Stuttgart, Germany'
+url:          'https://liweiyap.github.io/'
 baseurl:      ''
+logo:         'assets/logo-whitesmoke.svg'
 image:        'assets/logo-whitesmoke.svg'
 
 author:
@@ -14,3 +16,8 @@ author:
 
 plugins:
     - jekyll-seo-tag
+
+preferred_name: 'Li-Wei'
+preferred_description:
+    en:         'Software Developer'
+    de:         'Softwareentwickler'
