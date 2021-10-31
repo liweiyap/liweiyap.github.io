@@ -6,7 +6,7 @@
         {% elsif page.lang == "de" %}
             <a href="../de"><img class="sidebar-avatar" src="../assets/logo-whitesmoke.svg" onmouseover="hover(this);" onmouseout="unhover(this);" /></a>
         {% endif %}
-        
+
         <!-- Description of myself -->
         <div class="sidebar-about">
             <h1>{{ site.author.name }}</h1>
@@ -17,7 +17,7 @@
                 <p class="lead">{{ site.preferred_description.de }}</p>
             {% endif %}
         </div>
-        
+
         <!-- Navigation to other pages on the same gh-pages website -->
         <nav class="sidebar-nav">
             {% for item in site.data.navigation %}
@@ -26,7 +26,7 @@
                 {% endif %}
             {% endfor %}
         </nav>
-        
+
         <!-- Social icons -->
         <ul class="list-inline-spaced-evenly">
             <li>
@@ -67,7 +67,7 @@
                 {% endif %}
             </li>
         </ul>
-        
+
         <!-- Copyright notice & credits as footer -->
         {% if page.lang == "en" %}
             &copy; 2019-{{ site.time | date: '%Y' }}. <a href="{{ site.baseurl }}credits">Credits.</a>
