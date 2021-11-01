@@ -1,6 +1,5 @@
 **.Rhistory
-_config-dev.yml
 _site/*
 .DS_Store
-Gemfile*
+Gemfile.lock
 .sass-cache/
