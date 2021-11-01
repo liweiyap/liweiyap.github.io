@@ -14,6 +14,12 @@ author:
     linkedin: 'https://www.linkedin.com/in/liweiyap/'
     logo:     'assets/logo-whitesmoke.svg'
 
+social:
+    name: Li-Wei Yap
+    links:
+        - https://www.linkedin.com/in/liweiyap
+        - https://github.com/liweiyap
+
 plugins:
     - jekyll-seo-tag
 
