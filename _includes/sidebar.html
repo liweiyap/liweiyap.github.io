@@ -2,9 +2,9 @@
     <div class="container">
         <!-- Picture of myself -->
         {% if page.lang == "en" %}
-            <a href="/"><img class="sidebar-avatar" src="{{ site.baseurl }}assets/logo-whitesmoke.svg" onmouseover="hover(this);" onmouseout="unhover(this);" /></a>
+            <a href="/" tabindex="0"><img class="sidebar-avatar" src="{{ site.baseurl }}assets/logo-whitesmoke.svg" onmouseover="hover(this);" onmouseout="unhover(this);" /></a>
         {% elsif page.lang == "de" %}
-            <a href="../de"><img class="sidebar-avatar" src="../assets/logo-whitesmoke.svg" onmouseover="hover(this);" onmouseout="unhover(this);" /></a>
+            <a href="../de" tabindex="0"><img class="sidebar-avatar" src="../assets/logo-whitesmoke.svg" onmouseover="hover(this);" onmouseout="unhover(this);" /></a>
         {% endif %}
 
         <!-- Description of myself -->
@@ -22,7 +22,7 @@
         <nav class="sidebar-nav">
             {% for item in site.data.navigation %}
                 {% if item.lang == page.lang %}
-                    <a class="sidebar-nav-item" href="{{ item.link }}">{{ item.name }}</a>
+                    <a class="sidebar-nav-item" href="{{ item.link }}" tabindex="0">{{ item.name }}</a>
                 {% endif %}
             {% endfor %}
         </nav>
@@ -30,17 +30,17 @@
         <!-- Social icons -->
         <ul class="list-inline-spaced-evenly">
             <li>
-                <a href="mailto:{{ site.author.email }}" class="social-icon">
+                <a href="mailto:{{ site.author.email }}" class="social-icon" tabindex="0">
                     <i class="fa fa-fw fa-envelope"></i>
                 </a>
             </li>
             <li>
-                <a href="{{ site.author.github }}" target="_blank" class="social-icon">
+                <a href="{{ site.author.github }}" target="_blank" class="social-icon" tabindex="0">
                     <i class="fa fa-fw fa-github"></i>
                 </a>
             </li>
             <li>
-                <a href="{{ site.author.linkedin }}" target="_blank" class="social-icon">
+                <a href="{{ site.author.linkedin }}" target="_blank" class="social-icon" tabindex="0">
                     <i class="fa fa-fw fa-linkedin-square"></i>
                 </a>
             </li>
@@ -50,29 +50,29 @@
         <ul class="list-inline-spaced-evenly">
             <li>
                 {% if page.langref == "home" %}
-                    <a href=".."><img src="../assets/flags/united-kingdom.svg" height="30px" class="dim-on-hover dim-on-focus"></a>
+                    <a href=".." tabindex="0"><img src="../assets/flags/united-kingdom.svg" height="30px" class="dim-on-hover dim-on-focus"></a>
                 {% else %}
-                    <a href="../{{ page.langref }}"><img src="../assets/flags/united-kingdom.svg" height="30px" class="dim-on-hover dim-on-focus"></a>
+                    <a href="../{{ page.langref }}" tabindex="0"><img src="../assets/flags/united-kingdom.svg" height="30px" class="dim-on-hover dim-on-focus"></a>
                 {% endif %}
             </li>
             <li>
                 {% if page.langref == "home" %}
-                    <a href="../de"><img src="../assets/flags/germany.svg" height="30px" class="dim-on-hover dim-on-focus"></a>
+                    <a href="../de" tabindex="0"><img src="../assets/flags/germany.svg" height="30px" class="dim-on-hover dim-on-focus"></a>
                 {% elsif page.langref == "projects" %}
-                    <a href="../de/nebenprojekte"><img src="../assets/flags/germany.svg" height="30px" class="dim-on-hover dim-on-focus"></a>
+                    <a href="../de/nebenprojekte" tabindex="0"><img src="../assets/flags/germany.svg" height="30px" class="dim-on-hover dim-on-focus"></a>
                 {% elsif page.langref == "experience" %}
-                    <a href="../de/berufserfahrung"><img src="../assets/flags/germany.svg" height="30px" class="dim-on-hover dim-on-focus"></a>
+                    <a href="../de/berufserfahrung" tabindex="0"><img src="../assets/flags/germany.svg" height="30px" class="dim-on-hover dim-on-focus"></a>
                 {% elsif page.langref == "credits" %}
-                    <a href="../de/quellenangaben"><img src="../assets/flags/germany.svg" height="30px" class="dim-on-hover dim-on-focus"></a>
+                    <a href="../de/quellenangaben" tabindex="0"><img src="../assets/flags/germany.svg" height="30px" class="dim-on-hover dim-on-focus"></a>
                 {% endif %}
             </li>
         </ul>
 
         <!-- Copyright notice & credits as footer -->
         {% if page.lang == "en" %}
-            &copy; 2019-{{ site.time | date: '%Y' }}. <a href="{{ site.baseurl }}credits">Credits.</a>
+            &copy; 2019-{{ site.time | date: '%Y' }}. <a href="{{ site.baseurl }}credits" tabindex="0">Credits.</a>
         {% elsif page.lang == "de" %}
-            &copy; 2019-{{ site.time | date: '%Y' }}. <a href="{{ site.baseurl }}quellenangaben">Quellenangaben.</a>
+            &copy; 2019-{{ site.time | date: '%Y' }}. <a href="{{ site.baseurl }}quellenangaben" tabindex="0">Quellenangaben.</a>
         {% endif %}
     </div>
     <div id="particles-js"></div>

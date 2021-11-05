@@ -84,6 +84,7 @@ tbody tr:nth-child(odd) th {
     opacity: 0.8;
     filter: alpha(opacity=80);  /* For IE8 and earlier */
     text-decoration: none;
+    outline: none;  /* remove border on focus */
 }
 
 /* sidebar settings */
@@ -107,6 +108,7 @@ tbody tr:nth-child(odd) th {
     opacity: 0.8;
     filter: alpha(opacity=80);  /* For IE8 and earlier */
     text-decoration: none;
+    outline: none;  /* remove border on focus */
 }
 
 a.sidebar-nav-item:hover,
