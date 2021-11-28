@@ -335,6 +335,12 @@ span {
     border: 2px solid #3ebeff;
 }
 
+.capsule:hover {
+    background-color: #3ebeff;
+    color: #191b1f;
+    /* font-weight: bold; */
+}
+
 .container-nonselectabletext {
     -webkit-user-select: none; /* Safari */
     -moz-user-select: none; /* Firefox */
