@@ -274,13 +274,12 @@ a.social-icon {
 }
 
 /* like .list-inline-spaced-evenly */
-/* for programming language icons */
+/* for capsules and programming language icons */
 .list-inline {
     padding-left: 0;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: -5px;
 }
 
 /* separation between programming languages */
@@ -321,6 +320,26 @@ span {
     margin-left:  auto;
     margin-right: auto;
     border: 4px solid #30475e;
+}
+
+/* capsule */
+/* https://stackoverflow.com/a/32400620/12367873 */
+.capsule {
+    display: inline-block;
+    padding: 0 24px;
+    text-align: center;
+    line-height: 2rem;
+    border-radius: 3rem;
+    margin: 0 6px 6px 0;
+    color: #3ebeff;
+    border: 2px solid #3ebeff;
+}
+
+.container-nonselectabletext {
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
 }
 
 /* particles */
