@@ -256,12 +256,16 @@ a.social-icon {
 /* two-column format */
 .row {
     display: flex;
-    margin-top: -1rem;
     text-align: left;
 }
 
-.column {
+.column-half-width {
     flex: 50%;
+}
+
+.column-vertcentered {
+    display: flex;
+    align-items: center;
 }
 
 /* add short description to post, just after post-title */
@@ -326,11 +330,11 @@ span {
 /* https://stackoverflow.com/a/32400620/12367873 */
 .capsule {
     display: inline-block;
-    padding: 0 24px;
+    padding: 0 1.2em;
     text-align: center;
     line-height: 2rem;
     border-radius: 3rem;
-    margin: 0 6px 6px 0;
+    margin: 0 0 0.3em 0;
     color: #3ebeff;
     border: 2px solid #3ebeff;
 }
