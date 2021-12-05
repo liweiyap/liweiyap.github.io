@@ -289,9 +289,19 @@ a.social-icon {
     margin-bottom: 0.25rem;
 }
 
+.cell-iq-logo {
+    height: 52px;
+    display: initial;
+    margin-bottom: 0.375rem;
+}
+
 @media (min-width: 38em) {
     .cell-hd-logo {
         height: 90px;
+    }
+
+    .cell-iq-logo {
+        height: 64px;
     }
 }
 
@@ -299,17 +309,29 @@ a.social-icon {
     .cell-hd-logo {
         height: 72px;
     }
+
+    .cell-iq-logo {
+        height: 52px;
+    }
 }
 
 @media (min-width: 58em) {
     .cell-hd-logo {
         height: 81px;
     }
+
+    .cell-iq-logo {
+        height: 58px;
+    }
 }
 
 @media (min-width: 72em) {
     .cell-hd-logo {
         height: 90px;
+    }
+
+    .cell-iq-logo {
+        height: 64px;
     }
 }
 
