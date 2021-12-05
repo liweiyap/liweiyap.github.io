@@ -232,6 +232,19 @@ a:focus .dim-on-focus {
     height: 120px;
 }
 
+/* accordion */
+/* alternative: `input[type="checkbox"]`, see: https://css-tricks.com/the-checkbox-hack/ */
+/* alternative: code from scratch, see: https://www.w3schools.com/howto/howto_js_accordion.asp */
+details {
+    color: #3ebeff;
+    margin: 0 0.5rem 0.5rem 0.5rem;  /* can also play around with details[open] */
+    display: initial;
+}
+
+summary {
+    cursor: pointer;
+}
+
 /* social icons on same line */
 .list-inline-spaced-evenly {
     padding-left: 0;
@@ -264,8 +277,40 @@ a.social-icon {
 }
 
 .column-vertcentered {
+    /* play around with float: left; too */
     display: flex;
     align-items: center;
+}
+
+/* company logos */
+.cell-hd-logo {
+    height: 72px;
+    display: initial;
+    margin-bottom: 0.25rem;
+}
+
+@media (min-width: 38em) {
+    .cell-hd-logo {
+        height: 90px;
+    }
+}
+
+@media (min-width: 48em) {
+    .cell-hd-logo {
+        height: 72px;
+    }
+}
+
+@media (min-width: 58em) {
+    .cell-hd-logo {
+        height: 81px;
+    }
+}
+
+@media (min-width: 72em) {
+    .cell-hd-logo {
+        height: 90px;
+    }
 }
 
 /* add short description to post, just after post-title */
