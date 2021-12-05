@@ -1,0 +1,17 @@
+<!-- https://stackoverflow.com/a/6900392/12367873 -->
+<!-- `unselectable` to target IE9 and below -->
+<details>
+    {% if page.lang == "en" %}
+        <summary class="container-nonselectabletext dim-on-hover dim-on-focus" unselectable="on">Tools & Technologies</summary>
+    {% elsif page.lang == "de" %}
+        <summary class="container-nonselectabletext dim-on-hover dim-on-focus" unselectable="on">Tools & Technologien</summary>
+    {% endif %}
+    <!-- use `list-inline` and `span` to prevent highlightable space between capsules -->
+    <ul class="list-inline" style="margin-top: 0.5rem; margin-bottom: 0;">
+        <span>
+            <li>
+                <div class="capsule container-nonselectabletext" unselectable="on">Matlab</div>
+            </li>
+        </span>
+    </ul>
+</details>
