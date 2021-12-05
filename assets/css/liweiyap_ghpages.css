@@ -295,6 +295,12 @@ a.social-icon {
     margin-bottom: 0.375rem;
 }
 
+.cell-ic-logo {
+    height: 58px;
+    display: initial;
+    margin-bottom: 0.5rem;
+}
+
 @media (min-width: 38em) {
     .cell-hd-logo {
         height: 90px;
@@ -302,6 +308,10 @@ a.social-icon {
 
     .cell-iq-logo {
         height: 64px;
+    }
+
+    .cell-ic-logo {
+        height: 72px;
     }
 }
 
@@ -313,6 +323,10 @@ a.social-icon {
     .cell-iq-logo {
         height: 52px;
     }
+
+    .cell-ic-logo {
+        height: 58px;
+    }
 }
 
 @media (min-width: 58em) {
@@ -323,6 +337,10 @@ a.social-icon {
     .cell-iq-logo {
         height: 58px;
     }
+    
+    .cell-ic-logo {
+        height: 65px;
+    }
 }
 
 @media (min-width: 72em) {
@@ -332,6 +350,10 @@ a.social-icon {
 
     .cell-iq-logo {
         height: 64px;
+    }
+
+    .cell-ic-logo {
+        height: 72px;
     }
 }
 
