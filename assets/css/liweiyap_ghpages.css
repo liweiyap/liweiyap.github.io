@@ -242,7 +242,9 @@ details {
 }
 
 summary {
+    /* note that if summary is longer than details, then display is equal to that of summary */
     cursor: pointer;
+    outline: none;  /* remove border on focus */
 }
 
 /* social icons on same line */
