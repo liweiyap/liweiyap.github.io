@@ -28,8 +28,8 @@ layout: page
         <p>I then used the SwiftUI framework to create a desktop application that pops up at user-specified intervals, each time with a random expression from the SQLite database. These pop-ups serve as virtual placards for my regular revision of German expressions.</p>
         {% include text-popover-carousel.html %}
         <p>The user can also open the settings window and create new databases, so that the pop-up can display other user-defined texts:</p>
-        <img src="assets/text-popover/settingswindow.webp" width="500px" class="centered-img"/>
-        <img src="assets/text-popover/inspirationalquote.webp" width="350px" class="centered-img"/>
+        {% include text-popover-settingswindow.html %}
+        {% include text-popover-inspirationalquote.html %}
     </div>
 
     <div class="post">
@@ -52,9 +52,7 @@ layout: page
         <h2 class="post-title"><a href="https://github.com/liweiyap/Conway_GameOfLife" tabindex="0">Conway's Game of Life</a></h2>
         <h3 class="post-subtitle">Simulation of evolution in a grid-like population of cells in C++ with Qt</h3>
         <p>Given a grid of cells, each cell has an initial state: <i>live</i> (1) or <i>dead</i> (0). Each cell interacts with its <a href="https://en.wikipedia.org/wiki/Moore_neighborhood" tabindex="0">eight neighbours</a> (horizontal, vertical, or diagonal) using the following <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life#Rules" tabindex="0">four rules</a>:</p>
-        <div class="container-centered-with-limited-clickable-span">
-            <a href="https://qualityswdev.com/2011/07/31/conways-game-of-life-in-scala/" onmouseover="this.style.opacity=1; this.style.filter=alpha(opacity=100);" tabindex="0"><img src="../assets/conway/rules.webp" height="250px"></a>
-        </div>
+        {% include conway-rules.html %}
         <ol>
             <li>Any live cell with fewer than two live neighbours dies, as if caused by under-population <i>(inability to reproduce)</i>.</li>
             <li>Any live cell with two or three live neighbours lives on to the next generation <i>(ideal population density)</i>.</li>
