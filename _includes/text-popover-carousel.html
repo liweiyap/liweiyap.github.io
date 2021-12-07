@@ -8,7 +8,11 @@
                     Hellmodus
                 {% endif %}
             </h4>
-            <img src="../assets/text-popover/lightmode.webp" width="400px" class="centered-img"/>
+            <picture>
+                <source srcset="../assets/text-popover/lightmode.webp" type="image/webp">
+                <source srcset="../assets/text-popover/lightmode.png" type="image/png">
+                <img src="../assets/text-popover/lightmode.png" width="400px" class="centered-img"/>
+            </picture>
         </li>
         <li>
             <h4 style="text-align: center;">
@@ -18,7 +22,11 @@
                     Dunkelmodus
                 {% endif %}
             </h4>
-            <img src="../assets/text-popover/darkmode.webp" width="400px" class="centered-img"/>
+            <picture>
+                <source srcset="../assets/text-popover/darkmode.webp" type="image/webp">
+                <source srcset="../assets/text-popover/darkmode.png" type="image/png">
+                <img src="../assets/text-popover/darkmode.png" width="400px" class="centered-img"/>
+            </picture>
         </li>
     </ul>
     <div class="n-carousel__previous">
