@@ -427,7 +427,7 @@ span {
     border-radius: 3rem;
     margin: 0 0 0.3em 0;
     color: #3ebeff;
-    border: 2px solid #3ebeff;
+    border: 0.1em solid #3ebeff;
 }
 
 .capsule:hover {
