@@ -272,7 +272,7 @@ a.social-icon {
 
 /* flag icons */
 .flag-icon {
-    height: 24px;
+    height: 26px;
 }
 
 /* two-column format */
@@ -331,7 +331,7 @@ a.social-icon {
 
 @media (min-width: 48em) {
     .flag-icon {
-        height: 24px;
+        height: 26px;
     }
 
     .cell-hd-logo {
@@ -349,7 +349,7 @@ a.social-icon {
 
 @media (min-width: 58em) {
     .flag-icon {
-        height: 27px;
+        height: 28px;
     }
 
     .cell-hd-logo {
