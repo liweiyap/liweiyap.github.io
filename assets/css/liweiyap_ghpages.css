@@ -270,9 +270,9 @@ a.social-icon {
     color: #3ebeff;
 }
 
-/* flag icons (does not work) */
+/* flag icons */
 .flag-icon {
-    height: 30px;
+    height: 24px;
 }
 
 /* two-column format */
@@ -310,7 +310,12 @@ a.social-icon {
     margin-bottom: 0.5rem;
 }
 
+/* icon resizing */
 @media (min-width: 38em) {
+    .flag-icon {
+        height: 30px;
+    }
+
     .cell-hd-logo {
         height: 90px;
     }
@@ -325,6 +330,10 @@ a.social-icon {
 }
 
 @media (min-width: 48em) {
+    .flag-icon {
+        height: 24px;
+    }
+
     .cell-hd-logo {
         height: 72px;
     }
@@ -339,6 +348,10 @@ a.social-icon {
 }
 
 @media (min-width: 58em) {
+    .flag-icon {
+        height: 27px;
+    }
+
     .cell-hd-logo {
         height: 81px;
     }
@@ -353,6 +366,10 @@ a.social-icon {
 }
 
 @media (min-width: 72em) {
+    .flag-icon {
+        height: 30px;
+    }
+
     .cell-hd-logo {
         height: 90px;
     }
