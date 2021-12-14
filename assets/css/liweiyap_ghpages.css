@@ -291,41 +291,10 @@ a.social-icon {
     align-items: center;
 }
 
-/* company logos */
-.cell-hd-logo {
-    height: 72px;
-    display: initial;
-    margin-bottom: 0.25rem;
-}
-
-.cell-iq-logo {
-    height: 52px;
-    display: initial;
-    margin-bottom: 0.375rem;
-}
-
-.cell-ic-logo {
-    height: 58px;
-    display: initial;
-    margin-bottom: 0.5rem;
-}
-
 /* icon resizing */
 @media (min-width: 38em) {
     .flag-icon {
         height: 30px;
-    }
-
-    .cell-hd-logo {
-        height: 90px;
-    }
-
-    .cell-iq-logo {
-        height: 64px;
-    }
-
-    .cell-ic-logo {
-        height: 72px;
     }
 }
 
@@ -333,53 +302,17 @@ a.social-icon {
     .flag-icon {
         height: 26px;
     }
-
-    .cell-hd-logo {
-        height: 72px;
-    }
-
-    .cell-iq-logo {
-        height: 52px;
-    }
-
-    .cell-ic-logo {
-        height: 58px;
-    }
 }
 
 @media (min-width: 58em) {
     .flag-icon {
         height: 28px;
     }
-
-    .cell-hd-logo {
-        height: 81px;
-    }
-
-    .cell-iq-logo {
-        height: 58px;
-    }
-    
-    .cell-ic-logo {
-        height: 65px;
-    }
 }
 
 @media (min-width: 72em) {
     .flag-icon {
         height: 30px;
-    }
-
-    .cell-hd-logo {
-        height: 90px;
-    }
-
-    .cell-iq-logo {
-        height: 64px;
-    }
-
-    .cell-ic-logo {
-        height: 72px;
     }
 }
 
