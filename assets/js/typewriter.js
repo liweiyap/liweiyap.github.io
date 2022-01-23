@@ -1,52 +1,70 @@
-var typewriter = new Typewriter("#typewriter", {
-    cursor: '<span style="color:greenyellow;font-family:Inconsolata;font-size:90%;">█</span>',
+/* https://stackoverflow.com/a/4673436/12367873 */
+if (!String.prototype.format) {
+    String.prototype.format = function() {
+        var args = arguments;
+        /* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String#browser_compatibility */
+        /* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace */
+        return this.replace(/{(\d+)}/g, function(match, number) { 
+            return typeof args[number] != 'undefined'
+            ? args[number]
+            : match;
+        });
+    };
+}
+
+function styleString(unstyledString, extraStyleAttrs) {
+    return '<span style="color:greenyellow;font-family:Inconsolata;font-size:90%;{1}">{0}</span>'.format(unstyledString, extraStyleAttrs)
+}
+
+let typewriter = new Typewriter("#typewriter", {
+    cursor: styleString('█', ''),
     delay: 25
 });
 
 typewriter
-    .typeString('<span style="color:greenyellow;font-family:Inconsolata;font-size:90%;">$ ./run_main.sh liweiyap</span>')
+    .typeString(styleString('$ ./run_main.sh liweiyap', ''))
     .typeString('<br/>')
     .pauseFor(2000)
-    .typeString('<span style="color:greenyellow;font-family:Inconsolata;font-size:90%;">Name................. | Commits</span></label>')
+    .typeString(styleString('Name................. | Commits', ''))
     .typeString('<br/>')
-    .typeString('<span style="color:greenyellow;font-family:Inconsolata;font-size:90%;">text-popover-macOS .. | 125</span>')
+    .typeString(styleString('text-popover-macOS .. | 125', ''))
     .typeString('<br/>')
-    .typeString('<span style="color:greenyellow;font-family:Inconsolata;font-size:90%;">LeetCode_Solutions .. | 109</span>')
+    .typeString(styleString('LeetCode_Solutions .. | 109', ''))
     .typeString('<br/>')
-    .typeString('<span style="color:greenyellow;font-family:Inconsolata;font-size:90%;">liweiyap.github.io .. | 89</span>')
+    .typeString(styleString('narradir-android .... | 100', ''))
     .typeString('<br/>')
-    .typeString('<span style="color:greenyellow;font-family:Inconsolata;font-size:90%;">narradir-android .... | 66</span>')
+    .typeString(styleString('liweiyap.github.io .. | 90', ''))
     .typeString('<br/>')
-    .typeString('<span style="color:greenyellow;font-family:Inconsolata;font-size:90%;">Conway_GameOfLife ... | 59</span>')
+    .typeString(styleString('Conway_GameOfLife ... | 59', ''))
     .typeString('<br/>')
-    .typeString('<span style="color:greenyellow;font-family:Inconsolata;font-size:90%;">ProteinFolding ...... | 45</span>')
+    .typeString(styleString('ProteinFolding ...... | 45', ''))
     .typeString('<br/>')
-    .typeString('<span style="color:greenyellow;font-family:Inconsolata;font-size:90%;">HackerRank-Solutions. | 43</span>')
+    .typeString(styleString('HackerRank-Solutions. | 43', ''))
     .typeString('<br/>')
-    .typeString('<span style="color:greenyellow;font-family:Inconsolata;font-size:90%;">MyCPU ............... | 40</span>')
+    .typeString(styleString('MyCPU ............... | 40', ''))
     .typeString('<br/>')
-    .typeString('<span style="color:greenyellow;font-family:Inconsolata;font-size:90%;">liweiyap ............ | 34</span>')
+    .typeString(styleString('liweiyap ............ | 34', ''))
     .typeString('<br/>')
-    .typeString('<span style="color:greenyellow;font-family:Inconsolata;font-size:90%;">SortingReposByCommits | 28</span>')
+    .typeString(styleString('SortingReposByCommits | 28', ''))
     .typeString('<br/>')
-    .typeString('<span style="color:greenyellow;font-family:Inconsolata;font-size:90%;">DataStructs_Algos ... | 26</span>')
+    .typeString(styleString('DataStructs_Algos ... | 26', ''))
     .typeString('<br/>')
-    .typeString('<span style="color:greenyellow;font-family:Inconsolata;font-size:90%;">metawear-impl ....... | 26</span>')
+    .typeString(styleString('metawear-impl ....... | 26', ''))
     .typeString('<br/>')
-    .typeString('<span style="color:greenyellow;font-family:Inconsolata;font-size:90%;">xkcdbrowser-android . | 23</span>')
+    .typeString(styleString('xkcdbrowser-android . | 23', ''))
     .typeString('<br/>')
-    .typeString('<span style="color:greenyellow;font-family:Inconsolata;font-size:90%;">PvZ ................. | 22</span>')
+    .typeString(styleString('PvZ ................. | 22', ''))
     .typeString('<br/>')
-    .typeString('<span style="color:greenyellow;font-family:Inconsolata;font-size:90%;">foxtrot-android ..... | 16</span>')
+    .typeString(styleString('foxtrot-android ..... | 16', ''))
     .typeString('<br/>')
-    .typeString('<span style="color:greenyellow;font-family:Inconsolata;font-size:90%;">VecMatElemOps ....... | 6</span>')
+    .typeString(styleString('VecMatElemOps ....... | 6', ''))
     .typeString('<br/>')
-    .typeString('<span style="color:greenyellow;font-family:Inconsolata;font-size:90%;">pomodoro-android .... | 5</span>')
+    .typeString(styleString('pomodoro-android .... | 5', ''))
     .typeString('<br/>')
-    .typeString('<span style="color:greenyellow;font-family:Inconsolata;font-size:90%;">linkedin-janitor .... | 2</span>')
+    .typeString(styleString('linkedin-janitor .... | 2', ''))
     .typeString('<br/><br/>')
-    .typeString('<span style="color:greenyellow;font-family:Inconsolata;font-size:90%;">Total repositories: 18</span>')
+    .typeString(styleString('Total repositories: 18', ''))
     .typeString('<br/>')
-    .typeString('<span style="color:greenyellow;font-family:Inconsolata;font-size:90%;">Total commits: 764</span>')
-    .typeString('<span style="color:greenyellow;font-family:Inconsolata;font-size:90%;"><br/><br/>$</span>')
+    .typeString(styleString('Total commits: 799', ''))
+    .typeString(styleString('<br/><br/>$', 'margin-right:10px;'))
     .start();
