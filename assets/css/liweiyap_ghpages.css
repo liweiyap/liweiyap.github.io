@@ -336,7 +336,7 @@ a.social-icon {
 
 /* separation between programming languages */
 /* https://stackoverflow.com/a/8185290/12367873 */
-span {
+.prog-lang-span {
     margin-right: 10px;
 }
 
