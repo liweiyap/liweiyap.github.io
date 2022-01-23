@@ -70,9 +70,9 @@
 
         <!-- Copyright notice & credits as footer -->
         {% if page.lang == "en" %}
-            &copy; 2019-{{ site.time | date: '%Y' }}. <a href="{{ site.baseurl }}credits" tabindex="0">Credits.</a>
+            &copy; 2019-<span id="year"></span>. <a href="{{ site.baseurl }}credits" tabindex="0">Credits.</a>
         {% elsif page.lang == "de" %}
-            &copy; 2019-{{ site.time | date: '%Y' }}. <a href="{{ site.baseurl }}quellenangaben" tabindex="0">Quellenangaben.</a>
+            &copy; 2019-<span id="year"></span>. <a href="{{ site.baseurl }}quellenangaben" tabindex="0">Quellenangaben.</a>
         {% endif %}
     </div>
     <div id="particles-js"></div>
