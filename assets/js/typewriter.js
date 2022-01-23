@@ -33,7 +33,7 @@ typewriter
     .typeString('<br/>')
     .typeString(styleString('narradir-android .... | 100', ''))
     .typeString('<br/>')
-    .typeString(styleString('liweiyap.github.io .. | 90', ''))
+    .typeString(styleString('liweiyap.github.io .. | 91', ''))
     .typeString('<br/>')
     .typeString(styleString('Conway_GameOfLife ... | 59', ''))
     .typeString('<br/>')
