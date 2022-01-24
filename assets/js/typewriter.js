@@ -65,6 +65,6 @@ typewriter
     .typeString('<br/><br/>')
     .typeString(styleString('Total repositories: 18', ''))
     .typeString('<br/>')
-    .typeString(styleString('Total commits: 799', ''))
+    .typeString(styleString('Total commits: 800', ''))
     .typeString(styleString('<br/><br/>$', 'margin-right:10px;'))
     .start();

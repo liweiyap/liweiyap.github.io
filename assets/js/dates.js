@@ -1,5 +1,5 @@
-getYear();
+document.getElementById("year").innerHTML = getYear();
 
 function getYear() {
-    document.getElementById("year").innerHTML = new Date().getFullYear();
+    return new Date().getFullYear();
 }
