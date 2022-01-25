@@ -92,12 +92,15 @@ tbody tr:nth-child(odd) th {
     text-align: center;
     color: rgba(238,238,238,.6);
     position: relative;  /* fixes issue with particles in sidebar when latter is at the top (default value of sidebar::position is `static`) */
-    overflow: auto;  /* scrollbar settings */
 }
 
 @media (min-width: 48em) {
     .sidebar {
+        padding-top: 1.6rem;
+        padding-bottom: 1.6rem;
+        width: 20rem;
         position: fixed;
+        overflow-y: auto;
     }
 }
 
@@ -122,14 +125,6 @@ tbody tr:nth-child(odd) th {
 a.sidebar-nav-item:hover,
 a.sidebar-nav-item:focus {
     text-decoration: none;
-}
-
-@media (min-width: 48em) {
-    .sidebar {
-        padding-top: 2rem;
-        width: 20rem;
-        overflow-y: auto;
-    }
 }
 
 /* general margins and paddings */
