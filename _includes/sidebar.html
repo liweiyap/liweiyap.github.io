@@ -47,7 +47,7 @@
         </ul>
 
         <!-- Languages -->
-        <ul class="list-inline-spaced-evenly">
+        <ul class="list-inline-spaced-evenly" style="margin-bottom: 0.5rem;">
             <li>
                 {% if page.langref == "home" %}
                     <a href=".." tabindex="0"><img src="../assets/flags/united-kingdom.svg" class="flag-icon dim-on-hover dim-on-focus"></a>
@@ -64,15 +64,18 @@
                     <a href="../de/berufserfahrung" tabindex="0"><img src="../assets/flags/germany.svg" class="flag-icon dim-on-hover dim-on-focus"></a>
                 {% elsif page.langref == "credits" %}
                     <a href="../de/quellenangaben" tabindex="0"><img src="../assets/flags/germany.svg" class="flag-icon dim-on-hover dim-on-focus"></a>
+                {% elsif page.langref == "privacy" %}
+                    <a href="../de/datenschutz" tabindex="0"><img src="../assets/flags/germany.svg" class="flag-icon dim-on-hover dim-on-focus"></a>
                 {% endif %}
             </li>
         </ul>
 
         <!-- Copyright notice & credits as footer -->
+        &copy; 2019-<span id="year-sidebar"></span>.
         {% if page.lang == "en" %}
-            &copy; 2019-<span id="year"></span>. <a href="{{ site.baseurl }}credits" tabindex="0">Credits.</a>
+            <a href="{{ site.baseurl }}credits" tabindex="0">Credits</a>.</br><a href="{{ site.baseurl }}privacy" tabindex="0">Privacy Policy</a>.
         {% elsif page.lang == "de" %}
-            &copy; 2019-<span id="year"></span>. <a href="{{ site.baseurl }}quellenangaben" tabindex="0">Quellenangaben.</a>
+            <a href="{{ site.baseurl }}quellenangaben" tabindex="0">Quellenangaben</a>.</br><a href="{{ site.baseurl }}datenschutz" tabindex="0">Datenschutzerklärung</a>.
         {% endif %}
     </div>
     <div id="particles-js"></div>
