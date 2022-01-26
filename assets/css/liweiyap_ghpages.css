@@ -271,6 +271,11 @@ a.social-icon {
     height: 26px;
 }
 
+/* programming language icons */
+.prog-lang-icon {
+    border-radius: 0px;
+}
+
 /* two-column format */
 .row {
     display: flex;
