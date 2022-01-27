@@ -19,7 +19,7 @@ body {
 
 .post-title {
     margin-top: 0.75em;
-    color: #999a9b;
+    color: #9e9e9e;
 }
 
 code {
@@ -28,7 +28,7 @@ code {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: #999a9b;
+    color: #9e9e9e;
 }
 
 table {
@@ -90,7 +90,7 @@ tbody tr:nth-child(odd) th {
 /* sidebar settings */
 .sidebar {
     text-align: center;
-    color: #999a9b;
+    color: #9e9e9e;
     position: relative;  /* fixes issue with particles in sidebar when latter is at the top (default value of sidebar::position is `static`) */
 }
 
@@ -319,7 +319,7 @@ a.social-icon {
 
 /* add short description to post, just after post-title */
 .post-subtitle {
-    color: #999a9b;
+    color: #9e9e9e;
     margin-top: 0em;
     margin-bottom: 0.5em;
     font-weight: normal;
