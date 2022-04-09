@@ -309,7 +309,12 @@ a.social-icon {
     left: 0;
 }
 
+/* https://stackoverflow.com/a/42195057/12367873 */
 .link-icon-parent:hover>.link-icon {
+    display: block;
+}
+
+.prog-lang-icon-wrapper:focus~.link-icon {
     display: block;
 }
 
