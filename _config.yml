@@ -4,7 +4,7 @@ tagline:      'Software Developer'
 description:  'Software Developer'
 url:          'https://liweiyap.github.io/'
 baseurl:      ''
-logo:         'assets/logo-whitesmoke.svg'
+logo:         'assets/logo-whitesmokelight.svg'
 image:        'assets/liwei.jpg'
 
 author:
@@ -12,7 +12,7 @@ author:
     email:    'liweiyap@gmail.com'
     github:   'https://github.com/liweiyap'
     linkedin: 'https://www.linkedin.com/in/liweiyap/'
-    logo:     'assets/logo-whitesmoke.svg'
+    logo:     'assets/logo-whitesmokelight.svg'
 
 social:
     name: Li-Wei Yap
