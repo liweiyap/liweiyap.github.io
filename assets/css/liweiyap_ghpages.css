@@ -310,10 +310,7 @@ a.social-icon {
 }
 
 /* https://stackoverflow.com/a/42195057/12367873 */
-.link-icon-parent:hover>.link-icon {
-    display: block;
-}
-
+.prog-lang-icon-wrapper:hover~.link-icon,
 .prog-lang-icon-wrapper:focus~.link-icon {
     display: block;
 }
