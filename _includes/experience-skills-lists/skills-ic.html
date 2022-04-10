@@ -8,10 +8,12 @@
     {% endif %}
     <!-- use `list-inline` and `span` to prevent highlightable space between capsules -->
     <ul class="list-inline" style="margin-top: 0.5rem; margin-bottom: 0;">
-        <span class="prog-lang-span">
-            <li>
-                <div class="capsule container-nonselectabletext" unselectable="on">Matlab</div>
-            </li>
-        </span>
+        {% for skill in site.experience_skills.ic %}
+            <span class="prog-lang-span">
+                <li>
+                    <div class="capsule container-nonselectabletext" unselectable="on">{{ skill }}</div>
+                </li>
+            </span>
+        {% endfor %}
     </ul>
 </details>

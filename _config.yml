@@ -76,3 +76,22 @@ prog_icons:
           ext_link: https://en.wikipedia.org/wiki/JavaScript
         - name: dart
           ext_link: https://dart.dev/
+
+experience_skills:
+    hd:
+        - C++
+        - Android SDK/NDK
+        - Java
+        - Git
+        - Bash
+        - Python
+        - Qt
+        - CMake
+        - Gradle
+        - Linux
+        - Raspberry Pi
+    iq:
+        - R
+        - Linux
+    ic:
+        - Matlab
