@@ -270,11 +270,10 @@ summary {
 }
 
 .social-icon {
-    font-size: 1.5rem;
-}
-
-a.social-icon {
-    color: #3ebeff;
+    height: 1.25rem;
+    position: relative;
+    top: 0;
+    left: 0;
 }
 
 /* flag icons */
@@ -294,10 +293,7 @@ a.social-icon {
 /* link icon */
 .link-icon {
     border-radius: 0px;
-    height: 17px;
     position: absolute;
-    top: 9px;
-    left: 9px;
     pointer-events: none;
     display: none;
 }
@@ -309,7 +305,21 @@ a.social-icon {
     left: 0;
 }
 
+.social-icon-wrapper~.link-icon {
+    height: 0.61rem;
+    top: 0.32rem;
+    left: 0.32rem;
+}
+
+.prog-lang-icon-wrapper~.link-icon {
+    height: 17px;
+    top: 9px;
+    left: 9px;
+}
+
 /* https://stackoverflow.com/a/42195057/12367873 */
+.social-icon-wrapper:hover~.link-icon,
+.social-icon-wrapper:focus~.link-icon,
 .prog-lang-icon-wrapper:hover~.link-icon,
 .prog-lang-icon-wrapper:focus~.link-icon {
     display: block;

@@ -29,21 +29,18 @@
 
         <!-- Social icons -->
         <ul class="list-inline-spaced-evenly">
-            <li>
-                <a href="mailto:{{ site.author.email }}" class="social-icon" tabindex="0">
-                    <i class="fa fa-fw fa-envelope"></i>
-                </a>
-            </li>
-            <li>
-                <a href="{{ site.author.github }}" target="_blank" class="social-icon" tabindex="0">
-                    <i class="fa fa-fw fa-github"></i>
-                </a>
-            </li>
-            <li>
-                <a href="{{ site.author.linkedin }}" target="_blank" class="social-icon" tabindex="0">
-                    <i class="fa fa-fw fa-linkedin-square"></i>
-                </a>
-            </li>
+            {% for icon in site.social_icons %}
+                <li>
+                    <div class="link-icon-parent" style="margin-top: 0.5em; margin-bottom: -0.5em;">
+                        {% if icon.name == "email" %}
+                            <a href="mailto:{{ icon.ext_link }}" tabindex="0" class="social-icon-wrapper"><img src="../assets/social/{{ icon.name }}.svg" class="social-icon dim-on-hover-svg dim-on-focus-svg"></a>
+                        {% else %}
+                            <a href="{{ icon.ext_link }}" target="_blank" tabindex="0" class="social-icon-wrapper"><img src="../assets/social/{{ icon.name }}.svg" class="social-icon dim-on-hover-svg dim-on-focus-svg"></a>
+                        {% endif %}
+                        <img src="../assets/link-white.svg" class="link-icon">
+                    </div>
+                </li>
+            {% endfor %}
         </ul>
 
         <!-- Languages -->
