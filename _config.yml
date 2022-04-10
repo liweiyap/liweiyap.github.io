@@ -95,3 +95,24 @@ experience_skills:
         - Linux
     ic:
         - Matlab
+
+carousels:
+    narradir:
+        - screenshot-avalon-characterselection
+        - screenshot-avalon-play-close
+        - screenshot-avalon-play-minions-open
+        - screenshot-avalon-play-pause
+        - screenshot-avalon-play-minions-close
+        - screenshot-avalon-play-merlin
+        - screenshot-avalon-play-percival
+        - screenshot-avalon-play-wake
+        - screenshot-secrethitler-characterselection
+        - screenshot-secrethitler-play-fascists
+        - screenshot-settings
+    text_popover:
+        - lightmode
+        - darkmode
+    xkcdbrowser:
+        - screenshot-newestcomic
+        - screenshot-404
+        - screenshot-dialog-errorhandling

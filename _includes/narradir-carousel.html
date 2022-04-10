@@ -1,82 +1,14 @@
 <div class="n-carousel n-carousel--controls-outside">
     <ul class="n-carousel__content">
-        <li>
-            <picture>
-                <source srcset="../assets/narradir/screenshot-avalon-characterselection.webp" type="image/webp">
-                <source srcset="../assets/narradir/screenshot-avalon-characterselection.png" type="image/png">
-                <img src="../assets/narradir/screenshot-avalon-characterselection.png" class="mobile-screenshot centered-img"/>
-            </picture>
-        </li>
-        <li>
-            <picture>
-                <source srcset="../assets/narradir/screenshot-avalon-play-close.webp" type="image/webp">
-                <source srcset="../assets/narradir/screenshot-avalon-play-close.png" type="image/png">
-                <img src="../assets/narradir/screenshot-avalon-play-close.png" class="mobile-screenshot centered-img"/>
-            </picture>
-        </li>
-        <li>
-            <picture>
-                <source srcset="../assets/narradir/screenshot-avalon-play-minions-open.webp" type="image/webp">
-                <source srcset="../assets/narradir/screenshot-avalon-play-minions-open.png" type="image/png">
-                <img src="../assets/narradir/screenshot-avalon-play-minions-open.png" class="mobile-screenshot centered-img"/>
-            </picture>
-        </li>
-        <li>
-            <picture>
-                <source srcset="../assets/narradir/screenshot-avalon-play-pause.webp" type="image/webp">
-                <source srcset="../assets/narradir/screenshot-avalon-play-pause.png" type="image/png">
-                <img src="../assets/narradir/screenshot-avalon-play-pause.png" class="mobile-screenshot centered-img"/>
-            </picture>
-        </li>
-        <li>
-            <picture>
-                <source srcset="../assets/narradir/screenshot-avalon-play-minions-close.webp" type="image/webp">
-                <source srcset="../assets/narradir/screenshot-avalon-play-minions-close.png" type="image/png">
-                <img src="../assets/narradir/screenshot-avalon-play-minions-close.png" class="mobile-screenshot centered-img"/>
-            </picture>
-        </li>
-        <li>
-            <picture>
-                <source srcset="../assets/narradir/screenshot-avalon-play-merlin.webp" type="image/webp">
-                <source srcset="../assets/narradir/screenshot-avalon-play-merlin.png" type="image/png">
-                <img src="../assets/narradir/screenshot-avalon-play-merlin.png" class="mobile-screenshot centered-img"/>
-            </picture>
-        </li>
-        <li>
-            <picture>
-                <source srcset="../assets/narradir/screenshot-avalon-play-percival.webp" type="image/webp">
-                <source srcset="../assets/narradir/screenshot-avalon-play-percival.png" type="image/png">
-                <img src="../assets/narradir/screenshot-avalon-play-percival.png" class="mobile-screenshot centered-img"/>
-            </picture>
-        </li>
-        <li>
-            <picture>
-                <source srcset="../assets/narradir/screenshot-avalon-play-wake.webp" type="image/webp">
-                <source srcset="../assets/narradir/screenshot-avalon-play-wake.png" type="image/png">
-                <img src="../assets/narradir/screenshot-avalon-play-wake.png" class="mobile-screenshot centered-img"/>
-            </picture>
-        </li>
-        <li>
-            <picture>
-                <source srcset="../assets/narradir/screenshot-secrethitler-characterselection.webp" type="image/webp">
-                <source srcset="../assets/narradir/screenshot-secrethitler-characterselection.png" type="image/png">
-                <img src="../assets/narradir/screenshot-secrethitler-characterselection.png" class="mobile-screenshot centered-img"/>
-            </picture>
-        </li>
-        <li>
-            <picture>
-                <source srcset="../assets/narradir/screenshot-secrethitler-play-fascists.webp" type="image/webp">
-                <source srcset="../assets/narradir/screenshot-secrethitler-play-fascists.png" type="image/png">
-                <img src="../assets/narradir/screenshot-secrethitler-play-fascists.png" class="mobile-screenshot centered-img"/>
-            </picture>
-        </li>
-        <li>
-            <picture>
-                <source srcset="../assets/narradir/screenshot-settings.webp" type="image/webp">
-                <source srcset="../assets/narradir/screenshot-settings.png" type="image/png">
-                <img src="../assets/narradir/screenshot-settings.png" class="mobile-screenshot centered-img"/>
-            </picture>
-        </li>
+        {% for screenshot in site.carousels.narradir %}
+            <li>
+                <picture>
+                    <source srcset="../assets/narradir/{{ screenshot }}.webp" type="image/webp">
+                    <source srcset="../assets/narradir/{{ screenshot }}.png" type="image/png">
+                    <img src="../assets/narradir/{{ screenshot }}.png" class="mobile-screenshot centered-img"/>
+                </picture>
+            </li>
+        {% endfor %}
     </ul>
     <div class="n-carousel__previous">
         <button></button>
