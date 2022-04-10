@@ -227,6 +227,17 @@ a:focus .dim-on-focus {
     filter: alpha(opacity=80);  /* For IE8 and earlier */
 }
 
+/* TODO: combine with dim-on-hover and dim-on-focus when CSS vars are slightly more supported (https://stackoverflow.com/a/51461602/12367873) */
+.dim-on-hover-svg:hover {
+    opacity: 0.3;
+    filter: alpha(opacity=30);  /* For IE8 and earlier */
+}
+
+a:focus .dim-on-focus-svg {
+    opacity: 0.3;
+    filter: alpha(opacity=30);  /* For IE8 and earlier */
+}
+
 /* picture */
 .sidebar-avatar {
     display: block;
@@ -275,6 +286,33 @@ a.social-icon {
 .prog-lang-icon {
     border-radius: 0px;
     height: 35px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+/* link icon */
+.link-icon {
+    border-radius: 0px;
+    height: 17px;
+    position: absolute;
+    top: 9px;
+    left: 9px;
+    pointer-events: none;
+    display: none;
+}
+
+/* https://stackoverflow.com/a/1997397/12367873 */
+.link-icon-parent {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+/* https://stackoverflow.com/a/42195057/12367873 */
+.prog-lang-icon-wrapper:hover~.link-icon,
+.prog-lang-icon-wrapper:focus~.link-icon {
+    display: block;
 }
 
 /* mobile screenshots */

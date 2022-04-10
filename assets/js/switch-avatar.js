@@ -4,7 +4,7 @@
 // otherwise we cannot get rid of corner radius when sidebar avatar is logo SVG
 
 function unhover(sidebarAvatar) {
-    sidebarAvatar.setAttribute('src', '../assets/logo-whitesmoke.svg');
+    sidebarAvatar.setAttribute('src', '../assets/logo-whitesmokelight.svg');
     sidebarAvatar.setAttribute('style', 'transition: 0.3s;');
 }
 
