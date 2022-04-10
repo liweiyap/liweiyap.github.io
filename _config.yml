@@ -28,6 +28,14 @@ preferred_description:
     en:         'Software Developer'
     de:         'Softwareentwickler'
 
+social_icons:
+    - name: email
+      ext_link: liweiyap@gmail.com
+    - name: github
+      ext_link: https://github.com/liweiyap
+    - name: linkedin
+      ext_link: https://www.linkedin.com/in/liweiyap/
+
 prog_icons:
     favourites:
         - name: androidstudio
