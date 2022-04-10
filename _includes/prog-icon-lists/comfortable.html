@@ -1,82 +1,12 @@
 <ul class="list-inline" style="margin-bottom: -5px;">
-    <span class="prog-lang-span">
-        <li>
-            <div class="link-icon-parent">
-                <a href="https://developer.android.com/studio" tabindex="0" class="prog-lang-icon-wrapper"><img src="../assets/programming-languages/androidstudio.svg" class="prog-lang-icon dim-on-hover-svg dim-on-focus-svg"></a>
-                <img src="../assets/link-white.svg" class="link-icon">
-            </div>
-        </li>
-    </span>
-    <span class="prog-lang-span">
-        <li>
-            <div class="link-icon-parent">
-                <a href="https://www.java.com/en/" tabindex="0" class="prog-lang-icon-wrapper"><img src="../assets/programming-languages/java.svg" class="prog-lang-icon dim-on-hover-svg dim-on-focus-svg"></a>
-                <img src="../assets/link-white.svg" class="link-icon">
-            </div>
-        </li>
-    </span>
-    <span class="prog-lang-span">
-        <li>
-            <div class="link-icon-parent">
-                <a href="https://en.cppreference.com/w/" tabindex="0" class="prog-lang-icon-wrapper"><img src="../assets/programming-languages/cpp.svg" class="prog-lang-icon dim-on-hover-svg dim-on-focus-svg"></a>
-                <img src="../assets/link-white.svg" class="link-icon">
-            </div>
-        </li>
-    </span>
-    <span class="prog-lang-span">
-        <li>
-            <div class="link-icon-parent">
-                <a href="https://www.gnu.org/software/bash/" tabindex="0" class="prog-lang-icon-wrapper"><img src="../assets/programming-languages/bash.svg" class="prog-lang-icon dim-on-hover-svg dim-on-focus-svg"></a>
-                <img src="../assets/link-white.svg" class="link-icon">
-            </div>
-        </li>
-    </span>
-    <span class="prog-lang-span">
-        <li>
-            <div class="link-icon-parent">
-                <a href="https://www.python.org/" tabindex="0" class="prog-lang-icon-wrapper"><img src="../assets/programming-languages/python.svg" class="prog-lang-icon dim-on-hover-svg dim-on-focus-svg"></a>
-                <img src="../assets/link-white.svg" class="link-icon">
-            </div>
-        </li>
-    </span>
-    <span class="prog-lang-span">
-        <li>
-            <div class="link-icon-parent">
-                <a href="https://git-scm.com/" tabindex="0" class="prog-lang-icon-wrapper"><img src="../assets/programming-languages/git.svg" class="prog-lang-icon dim-on-hover-svg dim-on-focus-svg"></a>
-                <img src="../assets/link-white.svg" class="link-icon">
-            </div>
-        </li>
-    </span>
-    <span class="prog-lang-span">
-        <li>
-            <div class="link-icon-parent">
-                <a href="https://www.qt.io/" tabindex="0" class="prog-lang-icon-wrapper"><img src="../assets/programming-languages/qt.svg" class="prog-lang-icon dim-on-hover-svg dim-on-focus-svg"></a>
-                <img src="../assets/link-white.svg" class="link-icon">
-            </div>
-        </li>
-    </span>
-    <span class="prog-lang-span">
-        <li>
-            <div class="link-icon-parent">
-                <a href="https://www.r-project.org/" tabindex="0" class="prog-lang-icon-wrapper"><img src="../assets/programming-languages/r.svg" class="prog-lang-icon dim-on-hover-svg dim-on-focus-svg"></a>
-                <img src="../assets/link-white.svg" class="link-icon">
-            </div>
-        </li>
-    </span>
-    <span class="prog-lang-span">
-        <li>
-            <div class="link-icon-parent">
-                <a href="https://uk.mathworks.com/products/matlab.html" tabindex="0" class="prog-lang-icon-wrapper"><img src="../assets/programming-languages/matlab.svg" class="prog-lang-icon dim-on-hover-svg dim-on-focus-svg"></a>
-                <img src="../assets/link-white.svg" class="link-icon">
-            </div>
-        </li>
-    </span>
-    <span class="prog-lang-span">
-        <li>
-            <div class="link-icon-parent">
-                <a href="https://www.linux.org/" tabindex="0" class="prog-lang-icon-wrapper"><img src="../assets/programming-languages/linux.svg" class="prog-lang-icon dim-on-hover-svg dim-on-focus-svg"></a>
-                <img src="../assets/link-white.svg" class="link-icon">
-            </div>
-        </li>
-    </span>
+    {% for icon in site.prog_icons.comfortable %}
+        <span class="prog-lang-span">
+            <li>
+                <div class="link-icon-parent">
+                    <a href="{{ icon.ext_link }}" tabindex="0" class="prog-lang-icon-wrapper"><img src="../assets/programming-languages/{{ icon.name }}.svg" class="prog-lang-icon dim-on-hover-svg dim-on-focus-svg"></a>
+                    <img src="../assets/link-white.svg" class="link-icon">
+                </div>
+            </li>
+        </span>
+    {% endfor %}
 </ul>
