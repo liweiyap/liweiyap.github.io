@@ -1,33 +1,29 @@
 <div class="n-carousel n-carousel--controls-outside">
     <ul class="n-carousel__content">
-        <li>
-            <h4 style="text-align: center;">
-                {% if page.lang == "en" %}
-                    Light mode
-                {% elsif page.lang == "de" %}
-                    Hellmodus
-                {% endif %}
-            </h4>
-            <picture>
-                <source srcset="../assets/text-popover/lightmode.webp" type="image/webp">
-                <source srcset="../assets/text-popover/lightmode.png" type="image/png">
-                <img src="../assets/text-popover/lightmode.png" width="400px" class="centered-img"/>
-            </picture>
-        </li>
-        <li>
-            <h4 style="text-align: center;">
-                {% if page.lang == "en" %}
-                    Dark mode
-                {% elsif page.lang == "de" %}
-                    Dunkelmodus
-                {% endif %}
-            </h4>
-            <picture>
-                <source srcset="../assets/text-popover/darkmode.webp" type="image/webp">
-                <source srcset="../assets/text-popover/darkmode.png" type="image/png">
-                <img src="../assets/text-popover/darkmode.png" width="400px" class="centered-img"/>
-            </picture>
-        </li>
+        {% for mode in site.carousels.text_popover %}
+            <li>
+                <h4 style="text-align: center;">
+                    {% if page.lang == "en" %}
+                        {% if mode == "lightmode" %}
+                            Light mode
+                        {% elsif mode == "darkmode" %}
+                            Dark mode
+                        {% endif %}
+                    {% elsif page.lang == "de" %}
+                        {% if mode == "lightmode" %}
+                            Hellmodus
+                        {% elsif mode == "darkmode" %}
+                            Dunkelmodus
+                        {% endif %}
+                    {% endif %}
+                </h4>
+                <picture>
+                    <source srcset="../assets/text-popover/{{ mode }}.webp" type="image/webp">
+                    <source srcset="../assets/text-popover/{{ mode }}.png" type="image/png">
+                    <img src="../assets/text-popover/{{ mode }}.png" width="400px" class="centered-img"/>
+                </picture>
+            </li>
+        {% endfor %}
     </ul>
     <div class="n-carousel__previous">
         <button></button>

@@ -1,26 +1,12 @@
 <ul class="list-inline" style="margin-bottom: -5px;">
-    <span class="prog-lang-span">
-        <li>
-            <div class="link-icon-parent">
-                <a href="https://www.typescriptlang.org/" tabindex="0" class="prog-lang-icon-wrapper"><img src="../assets/programming-languages/typescript.svg" class="prog-lang-icon dim-on-hover-svg dim-on-focus-svg"></a>
-                <img src="../assets/link-white.svg" class="link-icon">
-            </div>
-        </li>
-    </span>
-    <span class="prog-lang-span">
-        <li>
-            <div class="link-icon-parent">
-                <a href="https://en.wikipedia.org/wiki/JavaScript" tabindex="0" class="prog-lang-icon-wrapper"><img src="../assets/programming-languages/javascript.svg" class="prog-lang-icon dim-on-hover-svg dim-on-focus-svg"></a>
-                <img src="../assets/link-white.svg" class="link-icon">
-            </div>
-        </li>
-    </span>
-    <span class="prog-lang-span">
-        <li>
-            <div class="link-icon-parent">
-                <a href="https://dart.dev/" tabindex="0" class="prog-lang-icon-wrapper"><img src="../assets/programming-languages/dart.svg" class="prog-lang-icon dim-on-hover-svg dim-on-focus-svg"></a>
-                <img src="../assets/link-white.svg" class="link-icon">
-            </div>
-        </li>
-    </span>
+    {% for icon in site.prog_icons.wishlist %}
+        <span class="prog-lang-span">
+            <li>
+                <div class="link-icon-parent">
+                    <a href="{{ icon.ext_link }}" tabindex="0" class="prog-lang-icon-wrapper"><img src="../assets/programming-languages/{{ icon.name }}.svg" class="prog-lang-icon dim-on-hover-svg dim-on-focus-svg"></a>
+                    <img src="../assets/link-white.svg" class="link-icon">
+                </div>
+            </li>
+        </span>
+    {% endfor %}
 </ul>
