@@ -29,53 +29,52 @@ preferred_description:
     de:         'Softwareentwickler'
 
 prog_icons:
-    comfortable:
+    favourites:
         - name: androidstudio
           ext_link: https://developer.android.com/studio
         - name: java
           ext_link: https://www.java.com/en/
+        - name: kotlin
+          ext_link: https://kotlinlang.org/
+        - name: jetpackcompose
+          ext_link: https://developer.android.com/jetpack/compose
+        - name: git
+          ext_link: https://git-scm.com/
+        - name: inkscape
+          ext_link: https://inkscape.org/
+    with_experience:
         - name: cpp
           ext_link: https://en.cppreference.com/w/
         - name: bash
           ext_link: https://www.gnu.org/software/bash/
         - name: python
           ext_link: https://www.python.org/
-        - name: git
-          ext_link: https://git-scm.com/
         - name: qt
           ext_link: https://www.qt.io/
         - name: r
           ext_linK: https://www.r-project.org/
-        - name: matlab
-          ext_link: https://uk.mathworks.com/products/matlab.html
         - name: linux
           ext_link: https://www.linux.org/
-    basic:
-        - name: kotlin
-          ext_link: https://kotlinlang.org/
+    do_not_mind:
         - name: swift
           ext_link: https://swift.org/
+        - name: xcode
+          ext_link: https://developer.apple.com/xcode/
+        - name: css
+          ext_link: https://www.w3.org/Style/CSS/
         - name: sqlite
           ext_link: https://www.sqlite.org/index.html
         - name: jekyll
           ext_link: https://jekyllrb.com/
-        - name: css
-          ext_link: https://www.w3.org/Style/CSS/
-        - name: xcode
-          ext_link: https://developer.apple.com/xcode/
-        - name: inkscape
-          ext_link: https://inkscape.org/
+        - name: matlab
+          ext_link: https://uk.mathworks.com/products/matlab.html
         - name: gimp
           ext_link: https://www.gimp.org/
         - name: latex
           ext_link: https://www.latex-project.org/
-    wishlist:
-        - name: typescript
-          ext_link: https://www.typescriptlang.org/
+    to_learn:
         - name: javascript
           ext_link: https://en.wikipedia.org/wiki/JavaScript
-        - name: dart
-          ext_link: https://dart.dev/
 
 experience_skills:
     hd:

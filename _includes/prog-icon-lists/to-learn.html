@@ -1,0 +1,12 @@
+<ul class="list-inline" style="margin-bottom: -5px;">
+    {% for icon in site.prog_icons.to_learn %}
+        <span class="prog-lang-span">
+            <li>
+                <div class="link-icon-parent">
+                    <a href="{{ icon.ext_link }}" tabindex="0" class="prog-lang-icon-wrapper"><img src="../assets/programming-languages/{{ icon.name }}.svg" class="prog-lang-icon dim-on-hover-svg dim-on-focus-svg"></a>
+                    <img src="../assets/link-white.svg" class="link-icon">
+                </div>
+            </li>
+        </span>
+    {% endfor %}
+</ul>
