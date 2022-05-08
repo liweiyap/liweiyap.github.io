@@ -80,7 +80,7 @@ prog_icons:
           ext_link: https://www.gimp.org/
         - name: latex
           ext_link: https://www.latex-project.org/
-    to_learn:
+    basic:
         - name: javascript
           ext_link: https://en.wikipedia.org/wiki/JavaScript
 
