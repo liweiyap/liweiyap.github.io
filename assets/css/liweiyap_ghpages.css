@@ -104,7 +104,7 @@ tbody tr:nth-child(odd) th {
     }
 
     .sidebar:hover,
-    /* Add focus and active to convert hover to click/touch on mobile (touchscreen) devices */
+    /* Focus to scroll/show scrollbar */
     .sidebar:focus,
     .sidebar:active {
         overflow-y: auto;

@@ -1,3 +1,5 @@
+// Touch to scroll/show scrollbar on mobile (touchscreen) devices
+
 var elementSidebar = document.getElementById('sidebar');
 
 elementSidebar.addEventListener('touchstart', function (event) {
