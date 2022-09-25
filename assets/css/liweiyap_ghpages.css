@@ -103,7 +103,8 @@ tbody tr:nth-child(odd) th {
         overflow: hidden;
     }
 
-    .sidebar:hover {
+    .sidebar:hover,
+    .sidebar:active {
         overflow-y: auto;
     }
 }
