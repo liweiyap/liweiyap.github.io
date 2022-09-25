@@ -100,7 +100,15 @@ tbody tr:nth-child(odd) th {
         padding-bottom: 1.6rem;
         width: 20rem;
         position: fixed;
+        overflow: hidden;
+    }
+
+    .sidebar:hover,
+    /* Focus to scroll/show scrollbar */
+    .sidebar:focus,
+    .sidebar:active {
         overflow-y: auto;
+        /* outline: none; */
     }
 }
 
@@ -466,7 +474,11 @@ summary {
 #particles-js {
     position: absolute;
     width: 100%;
-    height: 100%;
+    /*
+    Prevent particles from stretching all the way to the bottom and resulting in scrollbar being shown unnecessarily on Chrome.
+    There seems to be no difference between 95% and 98% for height??
+    */
+    height: 98%;
     left: 0px;
     top: 0px;
 }
