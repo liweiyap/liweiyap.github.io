@@ -104,6 +104,7 @@ tbody tr:nth-child(odd) th {
     }
 
     .sidebar:hover,
+    .sidebar:focus,
     .sidebar:active {
         overflow-y: auto;
     }
