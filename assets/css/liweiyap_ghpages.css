@@ -104,9 +104,11 @@ tbody tr:nth-child(odd) th {
     }
 
     .sidebar:hover,
+    /* Add focus and active to convert hover to click/touch on mobile (touchscreen) devices */
     .sidebar:focus,
     .sidebar:active {
         overflow-y: auto;
+        /* outline: none; */
     }
 }
 
