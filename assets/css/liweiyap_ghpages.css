@@ -108,6 +108,26 @@ tbody tr:nth-child(odd) th {
     }
 }
 
+@media (hover: none) and (pointer: coarse) {  /* Samsung Internet on Android phone without stylus */
+    .sidebar {
+        padding-top: 1.6rem;
+        padding-bottom: 1.6rem;
+        width: 20rem;
+        position: fixed;
+        overflow-y: auto;
+    }
+}
+
+@media (hover: none) and (pointer: fine) {  /* Samsung Internet on Android phone with stylus */
+    .sidebar {
+        padding-top: 1.6rem;
+        padding-bottom: 1.6rem;
+        width: 20rem;
+        position: fixed;
+        overflow-y: auto;
+    }
+}
+
 .sidebar a {
     color: #3ebeff;
 }
