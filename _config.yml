@@ -119,7 +119,3 @@ carousels:
     text_popover:
         - lightmode
         - darkmode
-    xkcdbrowser:
-        - screenshot-newestcomic
-        - screenshot-404
-        - screenshot-dialog-errorhandling

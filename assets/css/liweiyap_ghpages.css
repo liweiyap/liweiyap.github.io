@@ -171,6 +171,10 @@ a.sidebar-nav-item:focus {
     height: 1em;
 }
 
+.n-carousel__index > *[aria-current] {
+    background: var(--nui-control-bg, #848587);
+}
+
 
 /*
  * New functions
@@ -335,7 +339,7 @@ summary {
 
 /* mobile screenshots */
 .mobile-screenshot {
-    height: 500px;
+    width: 270px;
 }
 
 /* two-column format */
