@@ -2,21 +2,23 @@
     <ul class="n-carousel__content">
         {% for mode in site.carousels.text_popover %}
             <li>
-                <h4 style="text-align: center;">
-                    {% if page.lang == "en" %}
-                        {% if mode == "lightmode" %}
-                            Light mode
-                        {% elsif mode == "darkmode" %}
-                            Dark mode
+                <span>                
+                    <h4 style="text-align: center;">
+                        {% if page.lang == "en" %}
+                            {% if mode == "lightmode" %}
+                                Light mode
+                            {% elsif mode == "darkmode" %}
+                                Dark mode
+                            {% endif %}
+                        {% elsif page.lang == "de" %}
+                            {% if mode == "lightmode" %}
+                                Hellmodus
+                            {% elsif mode == "darkmode" %}
+                                Dunkelmodus
+                            {% endif %}
                         {% endif %}
-                    {% elsif page.lang == "de" %}
-                        {% if mode == "lightmode" %}
-                            Hellmodus
-                        {% elsif mode == "darkmode" %}
-                            Dunkelmodus
-                        {% endif %}
-                    {% endif %}
-                </h4>
+                    </h4>
+                </span>
                 <picture>
                     <source srcset="../assets/text-popover/{{ mode }}.webp" type="image/webp">
                     <source srcset="../assets/text-popover/{{ mode }}.png" type="image/png">
