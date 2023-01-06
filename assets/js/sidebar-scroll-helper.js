@@ -9,3 +9,7 @@ elementSidebar.addEventListener('touchstart', function (event) {
 elementSidebar.addEventListener('touchend', function (event) {
     elementSidebar.style.overflow = "hidden";
 }, false);
+
+elementSidebar.addEventListener('touchcancel', function (event) {
+    elementSidebar.style.overflow = "hidden";
+}, false);
