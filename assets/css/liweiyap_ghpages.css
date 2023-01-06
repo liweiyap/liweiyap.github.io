@@ -171,6 +171,14 @@ a.sidebar-nav-item:focus {
     height: 1em;
 }
 
+.n-carousel__index > *[aria-current],
+.n-carousel__previous > *[aria-current],
+.n-carousel__next > *[aria-current],
+.n-carousel__full-screen > *[aria-current],
+.n-carousel__close > *[aria-current] {
+    background: var(--nui-control-bg, #848587);
+}
+
 
 /*
  * New functions
