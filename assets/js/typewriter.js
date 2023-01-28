@@ -33,7 +33,7 @@ typewriter
     .typeString('<br/>')
     .typeString(styleString('LeetCode_Solutions .. | 116', ''))
     .typeString('<br/>')
-    .typeString(styleString('liweiyap.github.io .. | 110', ''))
+    .typeString(styleString('liweiyap.github.io .. | 111', ''))
     .typeString('<br/>')
     .typeString(styleString('Conway_GameOfLife ... | 59', ''))
     .typeString('<br/>')
@@ -65,6 +65,6 @@ typewriter
     .typeString('<br/><br/>')
     .typeString(styleString('Total repositories: 18', ''))
     .typeString('<br/>')
-    .typeString(styleString('Total commits: 926', ''))
+    .typeString(styleString('Total commits: 927', ''))
     .typeString(styleString('<br/><br/>$', 'margin-right:10px;'))
     .start();
