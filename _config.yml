@@ -4,15 +4,14 @@ tagline:      'Software Developer'
 description:  'Software Developer'
 url:          'https://liweiyap.github.io/'
 baseurl:      ''
-logo:         'assets/logo-whitesmokelight.svg'
-image:        'assets/liwei.jpg'
+logo:         'assets/logo-whitesmokelight-background-square-blackrussian.png'
 
 author:
     name:     'Li-Wei Yap'
     email:    'liweiyap@gmail.com'
     github:   'https://github.com/liweiyap'
     linkedin: 'https://www.linkedin.com/in/liweiyap/'
-    logo:     'assets/logo-whitesmokelight.svg'
+    picture:  'assets/logo-whitesmokelight-background-square-blackrussian.png'
 
 social:
     name: Li-Wei Yap
@@ -60,7 +59,7 @@ prog_icons:
         - name: qt
           ext_link: https://www.qt.io/
         - name: r
-          ext_linK: https://www.r-project.org/
+          ext_link: https://www.r-project.org/
         - name: linux
           ext_link: https://www.linux.org/
     do_not_mind:

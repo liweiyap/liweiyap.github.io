@@ -1,0 +1,14 @@
+<div class="n-carousel__previous">
+    {% if page.lang == "en" %}
+        <button aria-label="Swipe left"></button>
+    {% elsif page.lang == "de" %}
+        <button aria-label="Links wischen"></button>
+    {% endif %}
+</div>
+<div class="n-carousel__next">
+    {% if page.lang == "en" %}
+        <button aria-label="Swipe right"></button>
+    {% elsif page.lang == "de" %}
+        <button aria-label="Rechts wischen"></button>
+    {% endif %}
+</div>

@@ -22,19 +22,14 @@
                 <picture>
                     <source srcset="../assets/text-popover/{{ mode }}.webp" type="image/webp">
                     <source srcset="../assets/text-popover/{{ mode }}.png" type="image/png">
-                    <img src="../assets/text-popover/{{ mode }}.png" width="400px" class="centered-img"/>
+                    <img alt="Text-Popover Demo {{ forloop.index }}" src="../assets/text-popover/{{ mode }}.png" width="400px" class="centered-img"/>
                 </picture>
             </li>
         {% endfor %}
     </ul>
-    <div class="n-carousel__previous">
-        <button></button>
-    </div>
-    <div class="n-carousel__next">
-        <button></button>
-    </div>
+    {% include carousel-swipe-buttons.html %}
     <div class="n-carousel__index">
-        <button></button>
-        <button></button>
+        <button aria-label="Text-Popover Demo 1"></button>
+        <button aria-label="Text-Popover Demo 2"></button>
     </div>
 </div>

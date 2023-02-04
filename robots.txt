@@ -1,0 +1,7 @@
+# https://developers.google.com/search/docs/fundamentals/seo-starter-guide?hl=en#for-non-sensitive-information,-block-unwanted-crawling-by-using-robots.txt
+# Tell Google not to crawl any URLs in the following folders,
+# because they won't be useful in Google Search results.
+User-agent: googlebot
+Disallow: /assets/programming-languages/
+Disallow: /assets/social/
+Disallow: /assets/flags/
