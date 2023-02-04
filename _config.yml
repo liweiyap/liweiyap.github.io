@@ -59,7 +59,7 @@ prog_icons:
         - name: qt
           ext_link: https://www.qt.io/
         - name: r
-          ext_linK: https://www.r-project.org/
+          ext_link: https://www.r-project.org/
         - name: linux
           ext_link: https://www.linux.org/
     do_not_mind:
