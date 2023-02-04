@@ -33,7 +33,6 @@
                 <li>
                     <div class="link-icon-parent" style="margin-top: 0.5em; margin-bottom: -0.5em;">
                         {% if icon.name == "email" %}
-                            <!-- We intend to use alt for SEO, not accessbility -->
                             <a href="mailto:{{ icon.ext_link }}" aria-label="{{ icon.name }}" tabindex="0" class="social-icon-wrapper"><img alt="{{ icon.name }}" src="../assets/social/{{ icon.name }}.svg" class="social-icon dim-on-hover-svg dim-on-focus-svg"></a>
                         {% else %}
                             <a href="{{ icon.ext_link }}" aria-label="{{ icon.name }}" target="_blank" tabindex="0" class="social-icon-wrapper"><img alt="{{ icon.name }}" src="../assets/social/{{ icon.name }}.svg" class="social-icon dim-on-hover-svg dim-on-focus-svg"></a>
@@ -48,7 +47,6 @@
         <ul class="list-inline-spaced-evenly" style="margin-bottom: 0.5rem;">
             <li>
                 {% if page.langref == "home" %}
-                    <!-- We intend to use alt for SEO, not accessbility -->
                     <a href=".." aria-label="en" tabindex="0"><img alt="en" src="../assets/flags/united-kingdom.svg" class="flag-icon dim-on-hover dim-on-focus"></a>
                 {% else %}
                     <a href="../{{ page.langref }}" aria-label="en" tabindex="0"><img alt="en" src="../assets/flags/united-kingdom.svg" class="flag-icon dim-on-hover dim-on-focus"></a>
