@@ -2,9 +2,9 @@
     <div class="container">
         <!-- Picture of myself -->
         {% if page.lang == "en" %}
-            <a href="/" tabindex="0"><img class="sidebar-avatar" src="{{ site.baseurl }}assets/logo-whitesmokelight.svg" onmouseover="hover(this);" onmouseout="unhover(this);" /></a>
+            <a href="/" aria-label="Logo of Li-Wei Yap. Hover to view photo." tabindex="0"><img alt="Logo of Li-Wei Yap. Hover to view photo." class="sidebar-avatar" src="{{ site.baseurl }}assets/logo-whitesmokelight.svg" onmouseover="hover(this);" onmouseout="unhover(this);" /></a>
         {% elsif page.lang == "de" %}
-            <a href="../de" tabindex="0"><img class="sidebar-avatar" src="../assets/logo-whitesmokelight.svg" onmouseover="hover(this);" onmouseout="unhover(this);" /></a>
+            <a href="../de" aria-label="Logo von Li-Wei Yap. Bewegen Sie den Mauszeiger darüber, ums Foto anzuzeigen." tabindex="0"><img alt="Logo von Li-Wei Yap. Bewegen Sie den Mauszeiger darüber, ums Foto anzuzeigen." class="sidebar-avatar" src="../assets/logo-whitesmokelight.svg" onmouseover="hover(this);" onmouseout="unhover(this);" /></a>
         {% endif %}
 
         <!-- Description of myself -->
@@ -33,9 +33,10 @@
                 <li>
                     <div class="link-icon-parent" style="margin-top: 0.5em; margin-bottom: -0.5em;">
                         {% if icon.name == "email" %}
-                            <a href="mailto:{{ icon.ext_link }}" tabindex="0" class="social-icon-wrapper"><img src="../assets/social/{{ icon.name }}.svg" class="social-icon dim-on-hover-svg dim-on-focus-svg"></a>
+                            <!-- We intend to use alt for SEO, not accessbility -->
+                            <a href="mailto:{{ icon.ext_link }}" aria-label="{{ icon.name }}" tabindex="0" class="social-icon-wrapper"><img alt="{{ icon.name }}" src="../assets/social/{{ icon.name }}.svg" class="social-icon dim-on-hover-svg dim-on-focus-svg"></a>
                         {% else %}
-                            <a href="{{ icon.ext_link }}" target="_blank" tabindex="0" class="social-icon-wrapper"><img src="../assets/social/{{ icon.name }}.svg" class="social-icon dim-on-hover-svg dim-on-focus-svg"></a>
+                            <a href="{{ icon.ext_link }}" aria-label="{{ icon.name }}" target="_blank" tabindex="0" class="social-icon-wrapper"><img alt="{{ icon.name }}" src="../assets/social/{{ icon.name }}.svg" class="social-icon dim-on-hover-svg dim-on-focus-svg"></a>
                         {% endif %}
                         <img src="../assets/link-white.svg" class="link-icon">
                     </div>
@@ -47,22 +48,23 @@
         <ul class="list-inline-spaced-evenly" style="margin-bottom: 0.5rem;">
             <li>
                 {% if page.langref == "home" %}
-                    <a href=".." tabindex="0"><img src="../assets/flags/united-kingdom.svg" class="flag-icon dim-on-hover dim-on-focus"></a>
+                    <!-- We intend to use alt for SEO, not accessbility -->
+                    <a href=".." aria-label="en" tabindex="0"><img alt="en" src="../assets/flags/united-kingdom.svg" class="flag-icon dim-on-hover dim-on-focus"></a>
                 {% else %}
-                    <a href="../{{ page.langref }}" tabindex="0"><img src="../assets/flags/united-kingdom.svg" class="flag-icon dim-on-hover dim-on-focus"></a>
+                    <a href="../{{ page.langref }}" aria-label="en" tabindex="0"><img alt="en" src="../assets/flags/united-kingdom.svg" class="flag-icon dim-on-hover dim-on-focus"></a>
                 {% endif %}
             </li>
             <li>
                 {% if page.langref == "home" %}
-                    <a href="../de" tabindex="0"><img src="../assets/flags/germany.svg" class="flag-icon dim-on-hover dim-on-focus"></a>
+                    <a href="../de" aria-label="de" tabindex="0"><img alt="de" src="../assets/flags/germany.svg" class="flag-icon dim-on-hover dim-on-focus"></a>
                 {% elsif page.langref == "projects" %}
-                    <a href="../de/nebenprojekte" tabindex="0"><img src="../assets/flags/germany.svg" class="flag-icon dim-on-hover dim-on-focus"></a>
+                    <a href="../de/nebenprojekte" aria-label="de" tabindex="0"><img alt="de" src="../assets/flags/germany.svg" class="flag-icon dim-on-hover dim-on-focus"></a>
                 {% elsif page.langref == "experience" %}
-                    <a href="../de/berufserfahrung" tabindex="0"><img src="../assets/flags/germany.svg" class="flag-icon dim-on-hover dim-on-focus"></a>
+                    <a href="../de/berufserfahrung" aria-label="de" tabindex="0"><img alt="de" src="../assets/flags/germany.svg" class="flag-icon dim-on-hover dim-on-focus"></a>
                 {% elsif page.langref == "credits" %}
-                    <a href="../de/quellenangaben" tabindex="0"><img src="../assets/flags/germany.svg" class="flag-icon dim-on-hover dim-on-focus"></a>
+                    <a href="../de/quellenangaben" aria-label="de" tabindex="0"><img alt="de" src="../assets/flags/germany.svg" class="flag-icon dim-on-hover dim-on-focus"></a>
                 {% elsif page.langref == "privacy" %}
-                    <a href="../de/datenschutz" tabindex="0"><img src="../assets/flags/germany.svg" class="flag-icon dim-on-hover dim-on-focus"></a>
+                    <a href="../de/datenschutz" aria-label="de" tabindex="0"><img alt="de" src="../assets/flags/germany.svg" class="flag-icon dim-on-hover dim-on-focus"></a>
                 {% endif %}
             </li>
         </ul>
