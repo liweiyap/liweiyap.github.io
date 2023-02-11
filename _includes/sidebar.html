@@ -37,7 +37,7 @@
                         {% else %}
                             <a href="{{ icon.ext_link }}" aria-label="{{ icon.name }}" target="_blank" tabindex="0" class="social-icon-wrapper"><img alt="{{ icon.name }}" src="../assets/social/{{ icon.name }}.svg" class="social-icon dim-on-hover-svg dim-on-focus-svg"></a>
                         {% endif %}
-                        <img src="../assets/link-white.svg" class="link-icon">
+                        <img alt="{{ icon.name }}" src="../assets/link-white.svg" class="link-icon">
                     </div>
                 </li>
             {% endfor %}
