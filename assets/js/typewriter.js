@@ -27,7 +27,7 @@ typewriter
     .pauseFor(2000)
     .typeString(styleString('Name................. | Commits', ''))
     .typeString('<br/>')
-    .typeString(styleString('narradir-android .... | 203', ''))
+    .typeString(styleString('narradir-android .... | 204', ''))
     .typeString('<br/>')
     .typeString(styleString('text-popover-macOS .. | 125', ''))
     .typeString('<br/>')
@@ -69,6 +69,6 @@ typewriter
     .typeString('<br/><br/>')
     .typeString(styleString('Total repositories: 20', ''))
     .typeString('<br/>')
-    .typeString(styleString('Total commits: 989', ''))
+    .typeString(styleString('Total commits: 990', ''))
     .typeString(styleString('<br/><br/>$', 'margin-right:10px;'))
     .start();
