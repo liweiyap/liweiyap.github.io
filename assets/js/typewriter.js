@@ -31,7 +31,7 @@ typewriter
     .typeString('<br/>')
     .typeString(styleString('text-popover-macOS .. | 125', ''))
     .typeString('<br/>')
-    .typeString(styleString('liweiyap.github.io .. | 119', ''))
+    .typeString(styleString('liweiyap.github.io .. | 120', ''))
     .typeString('<br/>')
     .typeString(styleString('LeetCode_Solutions .. | 116', ''))
     .typeString('<br/>')
@@ -69,6 +69,6 @@ typewriter
     .typeString('<br/><br/>')
     .typeString(styleString('Total repositories: 20', ''))
     .typeString('<br/>')
-    .typeString(styleString('Total commits: 1014', ''))
+    .typeString(styleString('Total commits: 1015', ''))
     .typeString(styleString('<br/><br/>$', 'margin-right:10px;'))
     .start();
