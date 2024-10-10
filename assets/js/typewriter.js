@@ -35,7 +35,7 @@ typewriter
     .typeString('<br/>')
     .typeString(styleString('LeetCode_Solutions .. | 116', ''))
     .typeString('<br/>')
-    .typeString(styleString('bouldertagebuch-and . | 60', ''))
+    .typeString(styleString('boulderlog-android .. | 60', ''))
     .typeString('<br/>')
     .typeString(styleString('Conway_GameOfLife ... | 59', ''))
     .typeString('<br/>')
