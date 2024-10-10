@@ -3,19 +3,33 @@
         {% for screenshot in site.carousels.bouldertagebuch %}
             <li>
                 <picture>
-                    <source srcset="../assets/bouldertagebuch/{{ screenshot }}.webp" type="image/webp">
-                    <source srcset="../assets/bouldertagebuch/{{ screenshot }}.png" type="image/png">
-                    <img alt="Bouldering Log Demo {{ forloop.index }}" src="../assets/bouldertagebuch/{{ screenshot }}.png" class="mobile-screenshot centered-img"/>
+                    {% if page.lang == "en" %}
+                        <source srcset="../assets/bouldertagebuch/{{ screenshot }}-en.webp" type="image/webp">
+                        <source srcset="../assets/bouldertagebuch/{{ screenshot }}-en.png" type="image/png">
+                        <img alt="Bouldering Log Demo {{ forloop.index }}" src="../assets/bouldertagebuch/{{ screenshot }}-en.png" class="mobile-screenshot centered-img"/>
+                    {% elsif page.lang == "de" %}
+                        <source srcset="../assets/bouldertagebuch/{{ screenshot }}-de.webp" type="image/webp">
+                        <source srcset="../assets/bouldertagebuch/{{ screenshot }}-de.png" type="image/png">
+                        <img alt="Bouldertagebuch-Demo {{ forloop.index }}" src="../assets/bouldertagebuch/{{ screenshot }}-de.png" class="mobile-screenshot centered-img"/>
+                    {% endif %}
                 </picture>
             </li>
         {% endfor %}
     </ul>
     {% include carousel-swipe-buttons.html %}
     <div class="n-carousel__index">
-        <button aria-label="Bouldering Log Demo 1"></button>
-        <button aria-label="Bouldering Log Demo 2"></button>
-        <button aria-label="Bouldering Log Demo 3"></button>
-        <button aria-label="Bouldering Log Demo 4"></button>
-        <button aria-label="Bouldering Log Demo 5"></button>
+        {% if page.lang == "en" %}
+            <button aria-label="Bouldering Log Demo 1"></button>
+            <button aria-label="Bouldering Log Demo 2"></button>
+            <button aria-label="Bouldering Log Demo 3"></button>
+            <button aria-label="Bouldering Log Demo 4"></button>
+            <button aria-label="Bouldering Log Demo 5"></button>
+        {% elsif page.lang == "de" %}
+            <button aria-label="Bouldertagebuch-Demo 1"></button>
+            <button aria-label="Bouldertagebuch-Demo 2"></button>
+            <button aria-label="Bouldertagebuch-Demo 3"></button>
+            <button aria-label="Bouldertagebuch-Demo 4"></button>
+            <button aria-label="Bouldertagebuch-Demo 5"></button>
+        {% endif %}
     </div>
 </div>
