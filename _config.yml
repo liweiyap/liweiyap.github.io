@@ -1,7 +1,7 @@
 title:        'Li-Wei Yap'
 name:         'Li-Wei Yap'
-tagline:      'Software Developer'
-description:  'Software Developer'
+tagline:      'Android Developer'
+description:  'Android Developer'
 url:          'https://liweiyap.github.io/'
 baseurl:      ''
 logo:         'assets/logo-whitesmokelight-background-square-blackrussian.png'
@@ -24,8 +24,8 @@ plugins:
 
 preferred_name: 'Li-Wei'
 preferred_description:
-    en:         'Software Developer'
-    de:         'Softwareentwickler'
+    en:         'Android Developer'
+    de:         'Android-Entwickler'
 
 social_icons:
     - name: email
@@ -84,6 +84,18 @@ prog_icons:
           ext_link: https://en.wikipedia.org/wiki/JavaScript
 
 experience_skills:
+    ad:
+        - Java
+        - C++
+        - Android SDK/NDK
+        - AIDL
+        - Kotlin
+        - Jetpack Compose
+        - Bash
+        - Git
+        - Gradle
+        - JUnit
+        - Inkscape
     hd:
         - C++
         - Android SDK/NDK
