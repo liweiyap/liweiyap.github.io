@@ -115,6 +115,12 @@ carousels:
         - screenshot-secrethitler-characterselection
         - screenshot-secrethitler-play-fascists
         - screenshot-settings
+    bouldertagebuch:
+        - screenshot-select-gym
+        - screenshot-select-difficulty
+        - screenshot-today
+        - screenshot-highlight-vels
+        - screenshot-highlight-rockerei
     text_popover:
         - lightmode
         - darkmode
