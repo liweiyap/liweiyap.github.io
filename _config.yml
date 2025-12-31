@@ -54,6 +54,10 @@ prog_icons:
           ext_link: https://en.cppreference.com/w/
         - name: bash
           ext_link: https://www.gnu.org/software/bash/
+        - name: objc
+          ext_link: https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html
+        - name: xcode
+          ext_link: https://developer.apple.com/xcode/
         - name: python
           ext_link: https://www.python.org/
         - name: qt
@@ -65,8 +69,6 @@ prog_icons:
     do_not_mind:
         - name: swift
           ext_link: https://swift.org/
-        - name: xcode
-          ext_link: https://developer.apple.com/xcode/
         - name: css
           ext_link: https://www.w3.org/Style/CSS/
         - name: sqlite
