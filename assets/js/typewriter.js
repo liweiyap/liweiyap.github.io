@@ -59,7 +59,7 @@ typewriter
     .typeString('<br/>')
     .typeString(styleString('foxtrot-android ..... | 16', ''))
     .typeString('<br/>')
-    .typeString(styleString('bouldertagebuch-ios . | 9', ''))
+    .typeString(styleString('boulderlog-ios ...... | 9', ''))
     .typeString('<br/>')
     .typeString(styleString('VecMatElemOps ....... | 6', ''))
     .typeString('<br/>')

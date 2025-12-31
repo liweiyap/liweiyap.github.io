@@ -264,7 +264,6 @@ a:focus .dim-on-focus-svg {
 details {
     color: #3ebeff;
     margin: 0 0.5rem 0.5rem 0.5rem;  /* can also play around with details[open] */
-    display: initial;
 }
 
 summary {
